@@ -4,7 +4,7 @@
         <title> ProFix | Join Us </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="{{asset('css/apply.css') }}">
-        <link rel="icon" href="images/logo/logo-test.png">
+        <link rel="icon" href="{{asset('images/logo/logo-test.png')}}">
         <!-- Font-style (Josefin) for (the text-wefix) -->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     </head>
@@ -14,15 +14,15 @@
             
             <!-- Links & Logo -->
             <div class="logo">
-                <img src="images/logo/logo_transparent.png">
+            <img src="{{asset('images/logo/logo_transparent.png')}}">
             </div>
             
             <div class="links-head">
                <nav>
-                    <a href="index.blade.php"> Home </a>
-                    <a href="services.blade.php"> Services </a>
-                    <a href="about.blade.php"> About Us </a>
-                    <a href="contact.blade.php"> Contact </a>
+               <a href="{{route('index')}}"> Home </a>
+                    <a href="{{route('services')}}"> Services </a>
+                    <a href="{{route('about')}}"> About Us </a>
+                    <a href="{{route('contact')}}"> Contact </a>
                 </nav>
             </div>
 
@@ -102,19 +102,15 @@
         <!-- Links in the footer -->
         <div class="footer4">
             <div class="logo-footer4">
-                <img src="images/logo/logo_transparent.png">
+            <img src="{{asset('images/logo/logo_transparent.png')}}">
             </div>
 
             <div class="social4">
                 
                 <!-- <div class="fb"> -->
-                <a href="https://www.facebook.com" target="_blank"> <img src="images/fbicon.png"></a>
-                <!-- <div class="fb-text"> -->
-                    <!-- Visit Our Facebook Page  -->
-                <!-- </div> -->
-                <!-- </div> -->
-                <a href="https://www.instagram.com" target="_blank"> <img src="images/insta.png"> </a>
-                <a href="https://www.twitter.com" target="_blank"> <img src="images/twitter.png"> </a>
+                <a href="https://www.facebook.com" target="_blank"> <img src= "{{asset('images/fbicon.png')}}"></a>
+                <a href="https://www.instagram.com" target="_blank"> <img src="{{asset('images//insta.png')}}"> </a>
+                <a href="https://www.twitter.com" target="_blank"> <img src="{{asset('images//twitter.png')}}"> </a>
                 
             </div>
 

@@ -4,7 +4,7 @@
         <title> ProFix | Contact Us </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="{{asset('css/contact.css') }}">
-        <link rel="icon" href="images/logo/logo-test.png">
+        <link rel="icon" href="{{asset('images/logo/logo-test.png')}}">
     </head>
 
     <body>
@@ -14,15 +14,15 @@
             
             <!-- Links & Logo -->
             <div class="logo">
-                <img src="images/logo/logo_transparent.png">
+            <img src="{{asset('images/logo/logo_transparent.png')}}">
             </div>
             
             <div class="links-head">
                <nav>
-                    <a href="index.blade.php"> Home </a>
-                    <a href="services.blade.php"> Services </a>
-                    <a href="about.blade.php"> About Us </a>
-                    <a href="contact.blade.php"> Contact </a>
+               <a href="{{route('index')}}"> Home </a>
+                    <a href="{{route('services')}}"> Services </a>
+                    <a href="{{route('about')}}"> About Us </a>
+                    <a href="{{route('contact')}}"> Contact </a>
                 </nav>
             </div>
 
@@ -39,21 +39,25 @@
         <div class="contact">
             <div class="info">
                 <div class="logo-contact">
-                    <img src="images/logo/logo-test.png">
+                    
+                    <img src="{{asset('images/logo/logo-test.png')}}">
                 </div>
 
                 <div class="phone">
-                    <img src="images/phoneicon.png">
+                 
+                    <img src="{{asset('images/phoneicon.png')}}">
                     <span> Phone : +20123456789  </span>
                 </div>
 
                 <div class="address">
-                    <img src="images/addressicon.png">
+                 
+                    <img src="{{asset('images/addressicon.png')}}">
                     <span> Tanta </span>
                 </div>
 
                 <div class="mail">
-                    <img src="images/mailicon.png">
+                  
+                    <img src="{{asset('images/mailicon.png')}}">
                     <span> info@mail.com </span>
                 </div>
             </div>
@@ -90,20 +94,15 @@
         <!-- Footer -->
         <div class="footer4">
             <div class="logo-footer4">
-                <img src="../images/logo/logo_transparent.png">
+            <img src="{{asset('images/logo/logo_transparent.png')}}">
             </div>
 
             <div class="social4">
                 
                 <!-- <div class="fb"> -->
-                <a href="https://www.facebook.com" target="_blank"> <img src="images/fbicon.png"></a>
-                <!-- <div class="fb-text"> -->
-                    <!-- Visit Our Facebook Page  -->
-                <!-- </div> -->
-                <!-- </div> -->
-                <a href="https://www.instagram.com" target="_blank"> <img src="images/insta.png"> </a>
-                <a href="https://www.twitter.com" target="_blank"> <img src="images/twitter.png"> </a>
-                
+                <a href="https://www.facebook.com" target="_blank"> <img src= "{{asset('images/fbicon.png')}}"></a>
+                <a href="https://www.instagram.com" target="_blank"> <img src="{{asset('images//insta.png')}}"> </a>
+                <a href="https://www.twitter.com" target="_blank"> <img src="{{asset('images//twitter.png')}}"> </a>
             </div>
 
             <span>We are on social media : </span>

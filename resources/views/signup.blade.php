@@ -1,7 +1,7 @@
 <html>
 <head>
 <title> ProFix | SIGN UP </title>   
-<link rel="icon" href="images/logo/logo-test.png">
+<link rel="icon" href="{{asset('images/logo/logo-test.png')}}">
 <link rel="stylesheet" href="{{asset('css/signup.css') }}">
 </head>
 <body>
@@ -11,15 +11,15 @@
                         
     <!-- Links & Logo -->
     <div class="logo">
-       <img src="images/logo/logo_transparent.png">
+    <img src="{{asset('images/logo/logo_transparent.png')}}">
    </div>
    
    <div class="links-head">
       <nav>
-           <a href="index.blade.php" class="home"> Home </a>
-           <a href="services.blade.php"> Services </a>
-           <a href="about.blade.php"> About Us </a>
-           <a href="contact.blade.php"> Contact </a>
+                    <a href="{{route('index')}}"> Home </a>
+                    <a href="{{route('services')}}"> Services </a>
+                    <a href="{{route('about')}}"> About Us </a>
+                    <a href="{{route('contact')}}"> Contact </a>
        </nav>
 
      </div>
@@ -52,19 +52,15 @@
     </div>
     <div class="footer4">
       <div class="logo-footer4">
-          <img src="images/logo/logo_transparent.png">
+      <img src="{{asset('images/logo/logo_transparent.png')}}">
       </div>
 
       <div class="social4">
           
           <!-- <div class="fb"> -->
-          <a href="https://www.facebook.com" target="_blank"> <img src="images/fbicon.png"></a>
-          <!-- <div class="fb-text"> -->
-              <!-- Visit Our Facebook Page  -->
-          <!-- </div> -->
-          <!-- </div> -->
-          <a href="https://www.instagram.com" target="_blank"> <img src="images/insta.png"> </a>
-          <a href="https://www.twitter.com" target="_blank"> <img src="images/twitter.png"> </a>
+          <a href="https://www.facebook.com" target="_blank"> <img src= "{{asset('images/fbicon.png')}}"></a>
+                <a href="https://www.instagram.com" target="_blank"> <img src="{{asset('images//insta.png')}}"> </a>
+                <a href="https://www.twitter.com" target="_blank"> <img src="{{asset('images//twitter.png')}}"> </a>
           
       </div>
 

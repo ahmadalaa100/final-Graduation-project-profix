@@ -12,16 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::get('/index','IndexController@index');
-Route::get('/about','AboutController@about');
-Route::get('/apply','ApplytController@apply');
-Route::get('/book','BookController@book');
-Route::get('/contact','ContactController@contact');
-Route::get('/login','LoginController@login');
-Route::get('/services','ServicesController@services');
-Route::get('/signup','SignupController@signup');
+Route::get('/index','IndexController@index')->name('index');
+Route::get('/about','AboutController@about')->name('about');
+Route::get('/apply','ApplytController@apply')->name('apply');
+Route::get('/book','BookController@book')->name('book');
+Route::get('/contact','ContactController@contact')->name('contact');
+Route::get('/login','LoginController@login')->name('login');
+Route::get('/services','ServicesController@services')->name('services');
+Route::get('/signup','SignupController@signup')->name('signup');
 
 
