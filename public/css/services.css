@@ -95,7 +95,7 @@ nav a:hover::before{
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: absolute;
-    color: black;
+    color: white;
     top: 68%;
     left: 630px;
     letter-spacing: 1px;

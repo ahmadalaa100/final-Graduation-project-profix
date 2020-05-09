@@ -1,0 +1,198 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Dashboard">
+  <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+  <title>ProFix || Admin </title>
+
+  <!-- Favicons -->
+  <link href="{{asset('Admin/img/favicon.png')}}" rel="icon">
+  <link href="{{asset('Admin/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{asset('Admin/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <!--external css-->
+  <link href="{{asset('Admin/lib/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
+ 
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="{{asset('Admin/css/style.css') }}">
+  
+  <link href="{{asset('Admin/css/style-responsive.css') }}" rel="stylesheet">
+  
+  <!-- =======================================================
+    Template Name: Dashio
+    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+      <div class="sidebar-toggle-box">
+        <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+     <!--logo start-->
+    <a href="{{route('indexAdmin')}}" class="logo"><b>Pro<span>FIX</span></b></a>
+    <!--logo end-->
+      <div class="nav notify-row" id="top_menu">
+        <!--  notification start -->
+        <ul class="nav top-menu">
+         
+          <!-- settings end -->
+          
+              
+          <!-- inbox dropdown end -->
+          
+      </div>
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="{{route('loginAdmin')}}">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/ui-sam.jpg')}}" class="img-circle" width="80"></a></p>
+          <h5 class="centered">Ahmed Alaa</h5>
+          <li class="mt">
+            <a class="active" href="{{route('indexAdmin')}}">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+              </a>
+          </li>
+          
+         
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-book"></i>
+              <span>Extra Pages</span>
+              </a>
+            <ul class="sub">
+            
+              <li><a href="{{route('loginAdmin')}}">Login</a></li>
+             
+            </ul>
+          </li>
+         
+          <li class="sub-menu">
+            <a href="javascript:;">
+              <i class="fa fa-th"></i>
+              <span>Data Tables</span>
+              </a>
+            <ul class="sub">
+              <li><a href="{{route('customers')}}">Orders</a></li>
+              <li><a href="{{route('technicians')}}">Technicians</a></li>
+             
+            </ul>
+          </li>
+         
+          
+         
+          <li>
+            <a href="{{route('maps')}}">
+              <i class="fa fa-map-marker"></i>
+              <span>Google Maps </span>
+              </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper">
+        <h3><i ></i>Customers</h3>
+        <div class="row">
+          
+           
+          <!-- /col-md-12 -->
+          <div class="col-md-12 mt">
+            <div class="content-panel">
+              <table class="table table-hover">
+                <h4><i></i>Orders</h4>
+                <hr>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Specialization</th>
+                    <th>Date</th>
+                    <th>time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- /col-md-12 -->
+        </div>
+       
+  
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="{{asset('Admin/lib/jquery/jquery.min.js')}}"></script>
+  <script src="{{asset('Admin/lib/bootstrap/js/bootstrap.min.js')}}"></script>
+  <script class="include" type="text/javascript" src="{{asset('Admin/lib/jquery.dcjqaccordion.2.7.js')}}"></script>
+  <script src="{{asset('Admin/lib/jquery.scrollTo.min.js')}}"></script>
+  <script src="{{asset('Admin/lib/jquery.nicescroll.js')}}" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="{{asset('Admin/lib/common-scripts.js')}}"></script>
+  <!--script for this page-->
+  
+</body>
+
+</html>

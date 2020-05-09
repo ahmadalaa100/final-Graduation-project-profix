@@ -70,7 +70,7 @@
             </div>
 
             
-           <form action="{{route('book')}}"  method="POST"> 
+           <form action="{{route('book')}}"  method="GET"> 
             <input type="submit" name="submit" class="button" value="Book Now!">
             </form>
 

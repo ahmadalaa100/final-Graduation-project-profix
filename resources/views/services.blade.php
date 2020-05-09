@@ -86,7 +86,7 @@
             </div>
 
             <div class="button">
-                <form action="{{route('book')}}"  target="_blank" method="POST"> 
+                <form action="{{route('book')}}"   method="GET"> 
                     <input type="submit" name="submit" class="button" value="Book Now!">
               </form>
           </div>
