@@ -27,7 +27,7 @@ Route::get('/signup','SignupController@signup')->name('signup');
 //
 
 Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');
-Route::get('/customers','CustomersController@customers')->name('customers');
+Route::get('/customers','OrdersController@index')->name('customers');
 Route::get('/loginAdmin',' LoginAdminController@loginAdmin')->name('loginAdmin');
 Route::get('/maps','MapsController@maps')->name('maps');
 Route::get('/technicians','TechniciansController@technicians')->name('technicians');

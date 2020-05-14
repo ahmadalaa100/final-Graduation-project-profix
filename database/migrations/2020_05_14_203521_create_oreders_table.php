@@ -15,6 +15,12 @@ class CreateOredersTable extends Migration
     {
         Schema::create('oreders', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('mail');
+            $table->string('phone');
+            $table->string('addreess');
+            $table->string('spec');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
