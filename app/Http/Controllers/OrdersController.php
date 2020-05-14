@@ -5,18 +5,19 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-use App\Technicians;
-class TechniciansController extends Controller
+use App\Orders;
+class OrdersController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {
-        $Technicians = DB::table('technicians')->paginate(10);
-        return view('Admin.technicians')->with('tech',$Technicians);
+        $orders = DB::table('oreders')->paginate(10);
+        return view("Admin.customers")->with('order',$orders);
     }
 
     /**
@@ -26,7 +27,7 @@ class TechniciansController extends Controller
      */
     public function create()
     {
-        return view("Admin.technicians");
+        //
     }
 
     /**

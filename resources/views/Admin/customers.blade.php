@@ -146,41 +146,26 @@
                   </tr>
                 </thead>
                 <tbody>
+                @foreach($order as $i)
                   <tr>
-                    <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
+                    <td>{{$i->name}}</td>
+                    <td>{{$i->mail}}</td>
+                    <td>{{$i->phone}}</td>
+                    <td>{{$i->addreess}}</td>
+                    <td>{{$i->spec}}</td>
                     <td>@mdo</td>
                     <td>@mdo</td>
 
                   </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                  </tr>
+                  @endforeach
+                  
                 </tbody>
               </table>
             </div>
           </div>
           <!-- /col-md-12 -->
         </div>
-       
+        {{ $order->links() }}
   
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
