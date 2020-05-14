@@ -13,6 +13,7 @@ class OrdersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    
     public function index()
     {
         $orders = DB::table('oreders')->paginate(10);
