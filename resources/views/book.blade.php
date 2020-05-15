@@ -60,6 +60,12 @@
                 <option> Plumbing </option>
                 <option> Glass & Aluminium </option>
             </select>
+            <select name="pay"  class="choice">
+                <option selected disabled>  choose Payment type..  </option>
+                <option> Cash</option>
+                <option> Visa </option>
+                
+            </select>
 
               <div class="date">
                   <input type="date" name="date" class="input-date">

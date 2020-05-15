@@ -78,7 +78,7 @@ nav a:hover::before{
     position: relative;
     top: 200px;
     width: 35%;
-    height: 650px;
+    height: 700px;
     background-color: #032c63;
     margin: 0px auto;
     margin-bottom: 5%;
@@ -194,7 +194,7 @@ nav a:hover::before{
     top: 30px;
     left: 220px;
     border-radius: 30px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .schedule a{
     
