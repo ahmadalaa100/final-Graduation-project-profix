@@ -78,7 +78,7 @@ nav a:hover::before{
     position: relative;
     top: 200px;
     width: 35%;
-    height: 600px;
+    height: 650px;
     background-color: #032c63;
     margin: 0px auto;
     margin-bottom: 5%;
@@ -136,6 +136,17 @@ nav a:hover::before{
     margin-bottom: 2%;
     padding: 5px;
     border-radius: 10px;
+}
+.photo .input-photo{
+    width: 70%;
+    height: 50px;
+    position: relative;
+    left: 80px;
+    margin-bottom: 2% solid;
+    padding: 5px;
+    border-radius: 10px;
+    background: white;
+  
 }
 
 .address .input-address{
