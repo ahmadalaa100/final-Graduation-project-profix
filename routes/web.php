@@ -18,7 +18,9 @@ Route::get('/', function () {
 Route::get('/index','IndexController@index')->name('index');
 Route::get('/about','AboutController@about')->name('about');
 Route::get('/apply','ApplyController@apply')->name('apply');
+
 Route::get('/book','BookController@book')->name('book');
+Route::post('/book','BookController@create')->name('bookJob');
 
 Route::get('/contact','ContactController@contact')->name('contact');
 Route::post('/contact','ContactController@send')->name('sendContact');

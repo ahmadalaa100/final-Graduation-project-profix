@@ -154,8 +154,8 @@
                     <td>{{$i->phone}}</td>
                     <td>{{$i->addreess}}</td>
                     <td>{{$i->spec}}</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
+                    <td>{{$i->jobDate}}</td>
+                    <td>{{$i->jobTime}}</td>
 
                   </tr>
                   @endforeach

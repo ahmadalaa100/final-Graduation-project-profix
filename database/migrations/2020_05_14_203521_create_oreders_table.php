@@ -13,13 +13,16 @@ class CreateOredersTable extends Migration
      */
     public function up()
     {
-        Schema::create('oreders', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('mail');
             $table->string('phone');
             $table->string('addreess');
             $table->string('spec');
+            $table->string('pay');
+            $table->date('jobDate');
+            $table->time('jobTime');
             $table->string('image')->nullable();
             $table->timestamps();
         });
