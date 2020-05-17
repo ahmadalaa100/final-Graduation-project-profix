@@ -99,7 +99,7 @@
             <ul class="sub">
             <li><a href="{{route('customers')}}">Orders</a></li>
             <li><a href="{{route('technicians')}}">Technicians</a></li>
-            <li><a href="{{route('delegate')}}">Delegates</a></li>
+           
 
              
             </ul>
