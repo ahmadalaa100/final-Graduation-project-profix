@@ -96,7 +96,7 @@
                 </div>
 
                 <div class="message">
-                <textarea cols="74" rows="10" class="input-message" placeholder="Message*"></textarea>
+                <textarea cols="65" rows="10" class="input-message" placeholder="Message*"></textarea>
                 </div>
             </div>
             
