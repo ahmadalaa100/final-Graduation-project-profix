@@ -1,0 +1,77 @@
+.input-fname{
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 5px;
+   border: 1px solid;
+   position: relative;
+   
+}
+.input-lname{
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 2px;
+   border: 1px solid;
+   position: relative;
+}
+.input-id{
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 5px;
+   border: 1px solid;
+   position: relative;
+   margin-left: -3px;
+}
+.input-number{
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 5px;
+   border: 1px solid;
+   position: relative;
+   margin-left: -35px;
+}
+.input-email{
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 5px;
+   border: 1px solid;
+   position: relative;
+   margin-left: 33px;
+}
+.input-address{
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 5px;
+   border: 1px solid;
+   position: relative;
+   margin-left: 23px;
+}
+.input-birth{
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin-right: 5px;
+   border: 1px solid;
+   position: relative;
+   margin-left: 10px;
+}
+.specialization select{
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    border: 1px solid;
+    margin-left:-25px;
+}
+.forml label{
+    margin-right: 100px;
+    margin-left: 300px;
+    font-size: 16px;
+}
+.data{
+    margin-left:5%;
+}

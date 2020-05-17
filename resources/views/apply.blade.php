@@ -14,15 +14,15 @@
             
             <!-- Links & Logo -->
             <div class="logo">
-            <img src="{{asset('images/logo/logo_transparent.png')}}">
+                <img src="{{asset('images/logo/logo_transparent.png')}}">
             </div>
             
             <div class="links-head">
                <nav>
-               <a href="{{route('index')}}"> Home </a>
-                    <a href="{{route('services')}}"> Services </a>
-                    <a href="{{route('about')}}"> About Us </a>
-                    <a href="{{route('contact')}}"> Contact </a>
+                <a href="{{route('index')}}"> Home </a>
+                <a href="{{route('services')}}"> Services </a>
+                <a href="{{route('about')}}"> About Us </a>
+                <a href="{{route('contact')}}"> Contact </a>
                 </nav>
             </div>
 
@@ -71,7 +71,7 @@
                 <label> E-mail : </label>
                 <input type="email" name="email" class="input-email" placeholder="ex: info@example.com">
             </div>
-
+<!--
             <div class="address">
                 <label> Address : </label>
                 <input type="text" name="address" class="input-address" placeholder="ex: Tanta, El-Nadi ST.">
@@ -91,7 +91,7 @@
                 <label> Criminal Record Certificate : </label>
                 <input type="file" name="certificate" multiple class="input-certificate" >
             </div>
-
+-->
             <div class="button">
                 <a href="#"> Submit </a>
             </div>
@@ -102,15 +102,15 @@
         <!-- Links in the footer -->
         <div class="footer4">
             <div class="logo-footer4">
-            <img src="{{asset('images/logo/logo_transparent.png')}}">
+                <img src="{{asset('images/logo/logo_transparent.png')}}">
             </div>
 
             <div class="social4">
                 
                 <!-- <div class="fb"> -->
-                <a href="https://www.facebook.com" target="_blank"> <img src= "{{asset('images/fbicon.png')}}"></a>
-                <a href="https://www.instagram.com" target="_blank"> <img src="{{asset('images//insta.png')}}"> </a>
-                <a href="https://www.twitter.com" target="_blank"> <img src="{{asset('images//twitter.png')}}"> </a>
+                    <a href="https://www.facebook.com" target="_blank"> <img src= "{{asset('images/fbicon.png')}}"></a>
+                    <a href="https://www.instagram.com" target="_blank"> <img src="{{asset('images//insta.png')}}"> </a>
+                    <a href="https://www.twitter.com" target="_blank"> <img src="{{asset('images//twitter.png')}}"> </a>
                 
             </div>
 

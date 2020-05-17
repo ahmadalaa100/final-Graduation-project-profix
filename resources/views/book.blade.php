@@ -13,15 +13,15 @@
             
             <!-- Links & Logo -->
             <div class="logo">
-            <img src="{{asset('images/logo/logo_transparent.png')}}">
+                <img src="{{asset('images/logo/logo_transparent.png')}}">
             </div>
             
             <div class="links-head">
                <nav>
-               <a href="{{route('index')}}"> Home </a>
-                    <a href="{{route('services')}}"> Services </a>
-                    <a href="{{route('about')}}"> About Us </a>
-                    <a href="{{route('contact')}}"> Contact </a>
+                <a href="{{route('index')}}"> Home </a>
+                <a href="{{route('services')}}"> Services </a>
+                <a href="{{route('about')}}"> About Us </a>
+                <a href="{{route('contact')}}"> Contact </a>
                 </nav>
             </div>
 
@@ -33,9 +33,7 @@
         <div class="data">
           <div class="book">
               <div class="calendar">
-
-              <img src="{{asset('images/calendar.png')}}">
-                  
+                <img src="{{asset('images/calendar.png')}}">
                   <span> Schedule a service </span>
               </div>
               <div class="name">
@@ -62,6 +60,12 @@
                 <option> Plumbing </option>
                 <option> Glass & Aluminium </option>
             </select>
+            <select name="pay"  class="choice">
+                <option selected disabled>  choose Payment type..  </option>
+                <option> Cash</option>
+                <option> Visa </option>
+                
+            </select>
 
               <div class="date">
                   <input type="date" name="date" class="input-date">
@@ -69,6 +73,9 @@
 
               <div class="time">
                   <input type="time" name="time" class="input-time">
+              </div>
+              <div class="photo">
+                  <input type="file" name="photo" class="input-photo" placeholder="Insert Photo to your Problem">
               </div>
 
               <div class="schedule">
@@ -81,15 +88,16 @@
                  <!-- Links in the footer -->
         <div class="footer4">
             <div class="logo-footer4">
-            <img src="{{asset('images/logo/logo_transparent.png')}}">
+                <img src="{{asset('images/logo/logo_transparent.png')}}">
             </div>
 
             <div class="social4">
                 
                 <!-- <div class="fb"> -->
-                <a href="https://www.facebook.com" target="_blank"> <img src= "{{asset('images/fbicon.png')}}"></a>
-                <a href="https://www.instagram.com" target="_blank"> <img src="{{asset('images//insta.png')}}"> </a>
-                <a href="https://www.twitter.com" target="_blank"> <img src="{{asset('images//twitter.png')}}"> </a>
+                    <a href="https://www.facebook.com" target="_blank"> <img src= "{{asset('images/fbicon.png')}}"></a>
+                    <a href="https://www.instagram.com" target="_blank"> <img src="{{asset('images//insta.png')}}"> </a>
+                    <a href="https://www.twitter.com" target="_blank"> <img src="{{asset('images//twitter.png')}}"> </a>
+                
             </div>
 
 

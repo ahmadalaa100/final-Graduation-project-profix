@@ -27,18 +27,44 @@ Route::get('/login','LoginController@login')->name('login');
 Route::get('/services','ServicesController@services')->name('services');
 Route::get('/signup','SignupController@signup')->name('signup');
 
-//
 
+/*
 Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');
 Route::get('/customers','OrdersController@index')->name('customers');
 Route::get('/loginAdmin',' LoginAdminController@loginAdmin')->name('loginAdmin');
 Route::get('/maps','MapsController@maps')->name('maps');
 Route::get('/technicians','TechniciansController@index')->name('technicians');
-/*
+*/
+
 Route::middleware(['auth'])->group(function () {
     Route::get('/technicians','TechniciansController@index')->name('technicians');
 });
-*/
+
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');
+
+});
+
+
+Route::middleware(['auth'])->group(function () {
+   Route::get('/customers','OrdersController@index')->name('customers');
+});
+
+
+Route::middleware(['auth'])->group(function () {
+   Route::get('/loginAdmin',' LoginAdminController@loginAdmin')->name('loginAdmin');
+});
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/maps','MapsController@maps')->name('maps');
+});
+Route::get('/delegate', function () {
+    return view('delegate');
+});
+
 
 Auth::routes();
 

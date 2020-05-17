@@ -2,110 +2,262 @@ body{
     margin: 0px;
     background-image: url("../images/test4-head.jpg");
     background-attachment: fixed;
-    
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 *{
     box-sizing: border-box;
 }
 
-header{ 
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     background-color: #103f7e;
-    height: 100px;
-   
+    height: 105px;
+    width: 100%;
 }
-
 .logo{
-    position: relative;
-    top: 0px;
-    left: 5px;
-    height: 100px;
-    width: 18%;
+    width: 20%;
+}
+@media(max-width:1100px){
+    .logo{
+        width: 22%;
+        padding-top: 2%;
+        padding-left: .5%;
+    }
+}
+@media(max-width:850px){
+    .logo{
+        padding-top: 2%;
+        padding-left: .5%;
+    }
 }
 .logo img{
     height: 100%;
     width: 100%;  
 }
-
-
-.links-head{
-    width: 50%;
-    height: 50px;
-    position: absolute;
-    top: 50px;
-    left: 450px;
+@media(max-width:1100px){
+    .logo img{
+        height: 90%;
+    }
+}
+@media(max-width:850px){
+    .logo img{
+        height: 80%;
+    }
 }
 
-.links-head nav{
-    text-align: center;
+nav{
+    width: 45%;
+    text-align: end;
+    line-height: 105px;
+    padding-top: 10px;
+    margin-right: 5%;
+    margin-left: 3%;
 }
-
-.links-head a{
-    text-decoration: none;
+@media(max-width:1250px){
+    nav{
+        width: 40%;
+        margin-right: 4%;
+    }
+}
+@media(max-width:960px){
+    nav{
+        width: 45%;
+        margin-right: 5%;
+    }
+}
+nav a{
+    text-decoration: none !important;
     display: inline-block;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    color: white;
+    color: white !important;
     margin-right: 4%;
     font-size: 30px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 3px;
     letter-spacing: 1px;
-    margin-top: -25px;
 }
-
+@media(max-width:1250px){
+    nav a{
+       font-size: 21px;
+       margin-right: 2%;
+    }
+}
+@media(max-width:900px){
+    nav a{
+       font-size: 18px;
+       margin-right: 2%;
+    }
+}
+@media(max-width:800px){
+    nav a{
+       font-size: 15px;
+       margin-right: 2%;
+    }
+}
 nav a::before{
     content: "";
     display: block;
     height: 5px;
     width: 0%;
     background-color: white;
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    top: 60px;
 }
-
 nav a:hover::before{
-    width: 12%;
-    transition: 2500ms ;
+    width: 80%;
+    transition: 1000ms ;
 }
 
-     /* Banner */
+.sign{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 32%;
+    padding-top: 30px;
+}
+@media(max-width:1040px){
+    .sign{
+    width: 37%;
+    }
+}
+.signin{
+    display: inline-block;
+    width: 25%;
+    height: 35px;
+    background-color: #fece02;
+    text-align: center;
+    border-radius: 10px;
+}
+@media(max-width:850px){
+    .signin{
+        height: 30px;
+    }
+}
 
-.banner{
-    height: 450px;
+.signin a{
+    display: inline-block;
     width: 100%;
-    margin-bottom: 5%;
-}          
-.banner img{
     height: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    line-height: 30px;  
+}
+@media(max-width:1150px){
+    .signin a{
+       font-size: 18px;
+       margin-right: 2%;
+    }
+}
+@media(max-width:850px){
+    .signin a{
+        font-size: 16px;
+    }
+}
+.signup{
+    display: inline-block;
+    width: 65% ;
+    height: 35px;
+    background-color: #fece02;
+    text-align: center;
+    border-radius: 10px;   
+}
+@media(max-width:1040px){
+    .signup{
+    width: 70%;
+    }
+}
+@media(max-width:850px){
+    .signup{
+        height: 30px;
+    }
+}
+.signup a{
+    display: inline-block;
     width: 100%;
-    border-top: solid black 2px;
-    border-bottom: solid black 2px;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    line-height: 30px;  
 }
 
-    /* Conatct Area */
+@media(max-width:1150px){
+    .signup a{
+       font-size: 18px;
+       margin-right: 2%;
+    }
+}
+@media(max-width:850px){
+    .signup a{
+        font-size: 16px;
+    }
+}
+
+ /* Conatct Area */
 
 .contact{
-    height: 500px;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 80%;
     margin: 0px auto;
-    margin-bottom: 2%;
-    margin-top: 150px;
-   
+    margin-bottom: 3%;
+    margin-top: 10%;
 }    
 
- .info{
+.info{
     height: 400px;
     width: 25%;
     background-color: #10316b;
-    position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     border: solid black 2px;
-    left: 50px;
-    top: 25px;
     border-radius: 15px;
+    margin-right: 4%;
     
+}
+@media(max-width:1100px){
+    .info{
+        width: 31%;
+        margin-right: 3%;
+    }
+}
+.info > div{
+    width: 100%;
+}
+.logo-contact img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding-left: 0px !important;
+}
+.info img{
+    padding-left: 10px;
+    width: 15%;
+}
+.text{
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+}
+.text span{
+    color: white;
+    width: 100%;
+    display: inline-block;
+    font-size: 22px;
 }
 .logo-contact{
     height: 100px;
@@ -116,77 +268,10 @@ nav a:hover::before{
     height: 100%;
     width: 100%;
 }
-.phone{
-    height: 100px;
-    width: 100%;
-}
-.phone img{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    top: 80px;
-    left: -25px;  
-}
-.phone span{
-    position: absolute;
-    right: 100px;
-    top: 140px;
-    color: white;
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-}
-
-.address{
-    height: 100px;
-    width: 100%;
-}
-.address img{
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    top: 160px;
-    left: -25px;  
-}
-.address span{
-    position: absolute;
-    left: 100px;
-    top: 225px;
-    color: white;
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-}
-
-.mail{
-    height: 100px;
-    width: 100%;
-}
-.mail img{
-    height: 150px;
-    width: 230px;
-    position: absolute;
-    top: 260px;
-    left: -65px;  
-}
-.mail span{
-    position: absolute;
-    left: 100px;
-    top: 325px;
-    color: white;
-    font-size: 18px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-}
 
 .input-contact{
-    float: right;
-    height: 400px;
+    padding-top: 40px;
     width: 60%;
-    position: relative;
-    right: 40px;
-    top: 50px;
-    
 }
 
 .name .input-name{
@@ -222,13 +307,10 @@ nav a:hover::before{
 }
 
 .button{
-    position: relative;
-    display: inline-block;
-    height: 50px;
-    width: 100px;
+    width: 8%;
+    margin: 0px auto;
+    margin-bottom: 3%;
     background-color: #10316b;
-   top: 370px;
-    left: 350px;
     border: black solid 2px;
     border-radius: 30px;
 }
@@ -245,65 +327,71 @@ nav a:hover::before{
 }
 .button:hover{
     background-color: white;
-    border: #103f7e solid 2px;
+    border: black solid 2px;
 }
 .button:hover a{
-    color: #103f7e;
+    color: black;
 }
 .map{
     width: 70%;
     margin: 0px auto;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     border: black solid 2px;
     border-radius: 10px;
 }
-.map iframe{
-    
+.map iframe{ 
+    border-radius: 10px;
     width: 100%;
 }
 
-.footer4{
-    border-top: black solid 2px;
+/*
+
+Footer
+
+*/
+
+.footer{
     height: 300px;
     background-color: #103f7e;
-    position: relative;
-}
-.logo-footer4 img{
-    position: absolute;
-    height: 150px;
-    width: 380px;
-    left: 100px;
-    top: 60px;
-}
-
-
-.social4{
-    position: absolute;
-    height: 15%;
-    right: 290px;
-    top: 160px;
-    width: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     
 }
+.footer > div{
+    width: 50%;
+}
+.logo-footer{
+    text-align: center;
+    padding-top: 100px;
+}
+.logo-footer img{
+  width: 50%;
+}
 
-.footer4 .social4 img{
+.social{
+    width: 50%;
+    text-align: center;
+    padding-top: 100px;
+}
+.social span{
+    display: block;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-bottom: 2%;
+    text-transform: uppercase;
+}
+
+.footer .social img{
     display: inline-block;
     height: 50px;
     margin-right: 5%;
     
 }
-.social4 img:hover{
+.social img:hover{
     transform: rotate(360deg);
     transition: 3s;
-}
-.footer4 span{
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    text-transform: uppercase;
-    position: absolute;
-    right: 260px;
-    top: 100px;
 }
 
 .copyright{
@@ -312,7 +400,6 @@ nav a:hover::before{
 }
 
 .copyright .copy-text{
-    
     color: white;
     line-height: 50px;
     text-align: center;
