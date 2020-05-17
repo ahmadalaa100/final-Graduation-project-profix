@@ -30,6 +30,8 @@
 
 
         <!-- Application Form -->
+        <form action="{{route('applyTech')}}" method="post">
+        {{csrf_field()}}
         <div class="data">
             <div class="text">
                Complete the form and Join Us !
@@ -51,7 +53,7 @@
 
             <div class="specialization">
                 <label> Your Specialization : </label>
-               <select name="special"  >
+               <select name="spec"  >
                    <option selected disabled> Select your specialization </option>
                    <option> A/C Specialist </option>
                    <option> Carpenter </option>
@@ -64,12 +66,12 @@
 
             <div class="number">
                 <label> Mobile Number : </label>
-                <input type="text" name="number" class="input-number" placeholder="ex: 01234567890">
+                <input type="text" name="phone" class="input-number" placeholder="ex: 01234567890">
             </div>
 
             <div class="email">
                 <label> E-mail : </label>
-                <input type="email" name="email" class="input-email" placeholder="ex: info@example.com">
+                <input type="email" name="mail" class="input-email" placeholder="ex: info@example.com">
             </div>
 <!--
             <div class="address">
@@ -92,11 +94,11 @@
                 <input type="file" name="certificate" multiple class="input-certificate" >
             </div>
 -->
-            <div class="button">
-                <a href="#"> Submit </a>
-            </div>
+            
+                <input type="submit" value="Apply">
+           
         </div>
-
+        </form>
         
         
         <!-- Links in the footer -->

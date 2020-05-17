@@ -15,7 +15,7 @@ class TechniciansController extends Controller
      */
     public function index()
     {
-        $Technicians = DB::table('technicians')->paginate(10);
+        $Technicians = DB::table('technicians')->orderBy('created_at','desc')->paginate(10);
         return view('Admin.technicians')->with('tech',$Technicians);
     }
 

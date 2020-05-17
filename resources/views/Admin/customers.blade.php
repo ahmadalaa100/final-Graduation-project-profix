@@ -101,6 +101,7 @@
             <ul class="sub">
               <li><a href="{{route('customers')}}">Orders</a></li>
               <li><a href="{{route('technicians')}}">Technicians</a></li>
+              <li><a href="{{route('delegate')}}">delegate</a></li>
              
              
             </ul>
@@ -154,8 +155,8 @@
                     <td>{{$i->phone}}</td>
                     <td>{{$i->addreess}}</td>
                     <td>{{$i->spec}}</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
+                    <td>{{$i->jobDate}}</td>
+                    <td>{{$i->jobTime}}</td>
 
                   </tr>
                   @endforeach

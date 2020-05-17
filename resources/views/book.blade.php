@@ -29,60 +29,65 @@
 
         </header>
 
+        <form action="{{route('bookJob')}}" method="post">
+            {{csrf_field()}}
+            <div class="data">
+            <div class="book">
+                <div class="calendar">
+                    <img src="{{asset('images/calendar.png')}}">
+                    <span> Schedule a service </span>
+                </div>
+                <div class="name">
+                    <input type="text" name="name" class="input-name" placeholder="Name*">
+                </div>
 
-        <div class="data">
-          <div class="book">
-              <div class="calendar">
-                <img src="{{asset('images/calendar.png')}}">
-                  <span> Schedule a service </span>
-              </div>
-              <div class="name">
-                  <input type="text" name="name" class="input-name" placeholder="Name*">
-              </div>
+                <div class="mail">
+                    <input type="email" name="mail" class="input-mail" placeholder="Mail*">
+                </div>
 
-              <div class="mail">
-                  <input type="email" name="mail" class="input-mail" placeholder="Mail*">
-              </div>
+                <div class="phone">
+                    <input type="text" name="phone" class="input-phone" placeholder="Phone*">
+                </div>
 
-              <div class="phone">
-                  <input type="text" name="number" class="input-phone" placeholder="Phone*">
-              </div>
+                <div class="address">
+                    <input type="text" name="address" class="input-address" placeholder="Address*">
+                </div>
+                <select name="spec"  class="choice">
+                    <option selected disabled>  Choose a special  </option>
+                    <option> Air Conditioning </option>
+                    <option> Carpentart </option>
+                    <option> Electrician </option>
+                    <option> Painting </option>
+                    <option> Plumbing </option>
+                    <option> Glass & Aluminium </option>
+                </select>
+                <select name="pay"  class="choice">
+                    <option selected disabled>  choose Payment type..  </option>
+                    <option value='cash'> Cash</option>
+                    <option value='visa'> Visa </option>
+                    
+                </select>
 
-              <div class="address">
-                  <input type="text" name="address" class="input-address" placeholder="Address*">
-              </div>
-              <select name="special"  class="choice">
-                <option selected disabled>  Choose a special  </option>
-                <option> Air Conditioning </option>
-                <option> Carpentart </option>
-                <option> Electrician </option>
-                <option> Painting </option>
-                <option> Plumbing </option>
-                <option> Glass & Aluminium </option>
-            </select>
-            <select name="pay"  class="choice">
-                <option selected disabled>  choose Payment type..  </option>
-                <option> Cash</option>
-                <option> Visa </option>
+                <div class="date">
+                    <input type="date" name="date" class="input-date">
+                </div>
                 
-            </select>
+                
+                <div class="time">
+                    <input type="time" name="time" class="input-time">
+                </div>
+                
+                <div class="photo">
+                    <input type="file" name="photo" class="input-photo" placeholder="Insert Photo to your Problem">
+                </div>
 
-              <div class="date">
-                  <input type="date" name="date" class="input-date">
-              </div>
+                <div class="schedule">
+                    <input type="submit" value="Book">
+                </div>
+            </div>
+            </div>
+        </form>
 
-              <div class="time">
-                  <input type="time" name="time" class="input-time">
-              </div>
-              <div class="photo">
-                  <input type="file" name="photo" class="input-photo" placeholder="Insert Photo to your Problem">
-              </div>
-
-              <div class="schedule">
-                  <a href="#"> Book now! </a>
-              </div>
-          </div>
-        </div>
 
 
                  <!-- Links in the footer -->

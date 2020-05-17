@@ -11,6 +11,8 @@ $factory->define(Orders::class, function (Faker $faker) {
         'mail' =>Str::random(10) . '@gmail.com',
         'phone' => '0112164566',
         'addreess' => Str::random(10),
-        'spec' => 'electrical'
+        'spec' => 'electrical',
+        'pay' => 'cash',
+        'jobDate' => '20-5-2020'
     ];
 });
