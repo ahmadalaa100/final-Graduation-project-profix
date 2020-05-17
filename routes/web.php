@@ -38,10 +38,14 @@ Route::get('/technicians','TechniciansController@index')->name('technicians');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/technicians','TechniciansController@index')->name('technicians');
+    Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');
+    Route::get('/customers','OrdersController@index')->name('customers');
+    Route::get('/loginAdmin',' LoginAdminController@loginAdmin')->name('loginAdmin');
+    Route::get('/maps','MapsController@maps')->name('maps');
 });
 
 
-
+/*
 Route::middleware(['auth'])->group(function () {
     Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');
 
@@ -60,9 +64,11 @@ Route::middleware(['auth'])->group(function () {
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/maps','MapsController@maps')->name('maps');
+    
 });
+*/
 Route::get('/delegate', function () {
-    return view('delegate');
+    return view('Admin.delegate');
 });
 
 

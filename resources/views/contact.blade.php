@@ -104,8 +104,12 @@
                     </div>
 =======
                 <div class="message">
+<<<<<<< HEAD
                 <textarea cols="74" rows="10" class="input-message" placeholder="Message*"></textarea>
 >>>>>>> 8de5be0482e9cb24b5724299882237f3b4bc8b28
+=======
+                <textarea cols="65" rows="10" class="input-message" placeholder="Message*"></textarea>
+>>>>>>> c1ddbd1d2a488b53dab08e64bca0dd04d4135dd3
                 </div>
                 <div class="button">
                     <input type="submit" value="Send">
