@@ -62,28 +62,32 @@
                 </div>
             </div>
 
-
-            <div class="input-contact">
-                <div class="name">
-                    <input type="text" name="name"  class="input-name" placeholder="Name * ">
-                </div> 
-
-                <div class="email">
-                    <input type="email" name="mail" class="input-mail" placeholder=" E-mail * ">
-                </div>
-
-                <div class="subject">
-                    <input type="text" name="subject" class="input-subject" placeholder="Subject * ">
-                </div>
-
-                <div class="message">
-                <textarea cols="90" rows="10" class="input-message" placeholder="Message*"></textarea>
-                </div>
-            </div>
+            <form action="{{route('sendContact')}}" method="post">
+                {{csrf_field()}}
             
-            <div class="button">
-               <a href="#"> Send </a>
-            </div>
+                <div class="input-contact">
+
+                    <div class="name">
+                        <input type="text" name="name"  class="input-name" placeholder="Name * ">
+                    </div> 
+
+                    <div class="email">
+                        <input type="email" name="mail" class="input-mail" placeholder=" E-mail * ">
+                    </div>
+
+                    <div class="subject">
+                        <input type="text" name="subject" class="input-subject" placeholder="Subject * ">
+                    </div>
+
+                    <div class="message">
+                        <textarea name='message' cols="90" rows="10" class="input-message" placeholder="Message*"></textarea>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+            
         </div>
 
         <div class="map">
