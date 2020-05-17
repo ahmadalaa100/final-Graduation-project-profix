@@ -71,9 +71,8 @@ Route::middleware(['auth'])->group(function () {
     
 });
 */
-Route::get('/delegate', function () {
-    return view('Admin.delegate');
-});
+Route::get('/delegate','DelegateController@index')->name('delegate');
+
 
 
 Auth::routes();
