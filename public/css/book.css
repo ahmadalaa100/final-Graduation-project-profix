@@ -84,6 +84,7 @@ nav a:hover::before{
     margin-bottom: 5%;
     border-radius: 20px;
     opacity: 0.95;
+    margin-top: -50px;
 }
 
 .calendar{
@@ -184,7 +185,7 @@ nav a:hover::before{
     margin-bottom: 2%;  
     border-radius: 10px;
 }
-
+/*
 .schedule{
     width: 20%;
     height: 50px;
@@ -195,13 +196,22 @@ nav a:hover::before{
     left: 220px;
     border-radius: 30px;
     margin-top: 20px;
-}
-.schedule a{
-    
-    text-decoration: none;
-    color: white;
+}*/
+.input-submit{
+    width: 25%;
+    height: 50px;
     text-align: center;
-    line-height: 50px;
+    background-color: #103f7e;
+    position: relative;
+    top: 30px;
+    left: 200px;
+    border-radius: 30px;
+    margin-top: 20px;
+    color: white;
+    font-size: 16px;
+   
+    cursor: pointer;
+    border: none;
 }
 
 

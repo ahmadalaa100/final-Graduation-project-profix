@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="{{asset('Admin/css/style.css') }}">
   
   <link href="{{asset('Admin/css/style-responsive.css') }}" rel="stylesheet">
+  <link href="{{asset('Admin/css/apply1.css')}}" rel="stylesheet">
+
   
   <!-- =======================================================
     
@@ -100,7 +102,8 @@
               <li><a href="{{route('customers')}}">Orders</a></li>
               <li><a href="{{route('technicians')}}">Technicians</a></li>
               <li><a href="{{route('delegatetable')}}">delegate</a></li>
-             
+            
+
              
             </ul>
           </li>
@@ -122,51 +125,96 @@
         MAIN CONTENT
         *********************************************************************************************************************************************************** -->
     <!--main content start-->
-    <section id="main-content">
-      <section class="wrapper">
-        <h3><i ></i>Customers</h3>
-        <div class="row">
-          
+    <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class='text-center'>Add Technician</h1>
+            <br>
+            <br>
+    <form  class='forml' >
            
-          <!-- /col-md-12 -->
-          <div class="col-md-12 mt">
-            <div class="content-panel">
-              <table class="table table-hover">
-                <h4><i></i>Orders</h4>
-                <hr>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>E-mail</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                    <th>Specialization</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                  </tr>
-                </thead>
-                <tbody>
-                @foreach($order as $i)
-                  <tr>
-                    <td>{{$i->name}}</td>
-                    <td>{{$i->mail}}</td>
-                    <td>{{$i->phone}}</td>
-                    <td>{{$i->addreess}}</td>
-                    <td>{{$i->spec}}</td>
-                    <td>{{$i->jobDate}}</td>
-                    <td>{{$i->jobTime}}</td>
+            <div class="data">
+           
+                
 
-                  </tr>
-                  @endforeach
-                  
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <!-- /col-md-12 -->
-        </div>
-        {{ $order->links() }}
-  
+                    <div class="fname">
+                        <label> First Name : </label>
+                        <input type="text" 
+                         name="fname" placeholder="ex: Ahmed" class="input-fname"  required>
+                    </div>
+
+                    <div class="lname">
+                        <label> Last Name : </label>
+                        <input type="text" 
+                         name="lname" placeholder="ex: Ali" class="input-lname"required>
+                    </div>
+
+                    <div class="id">
+                        <label> National ID : </label>
+                        <input type="text" 
+                         name="nid" placeholder="ex:298012345678912" class="input-id"required>
+                    </div>
+
+                    <div class="specialization">
+                        <label> Specialization : </label>
+                    <select name="special[]"required>
+                        <option selected disabled>  </option>
+                        <option value="A/C Specialist"> A/C Specialist </option>
+                        <option value="Carpenter"> Carpenter </option>
+                        <option value="Electrician"> Electrician </option>
+                        <option value="Painter"> Painter </option>
+                        <option value="Plumber"> Plumber </option>
+                        <option value="Glass & Aluminium"> Glass & Aluminium </option>
+                    </select>
+                    </div>
+
+
+                    <div class="number">
+                        <label> Mobile Number : </label>
+                        <input type="text"  name="number" class="input-number" placeholder="ex: 01234567890"required>
+                    </div>
+
+                    <div class="email">
+                        <label> E-mail : </label>
+                        <input type="email" name="email" class="input-email" placeholder="ex: info@example.com"required>
+                    </div>
+<!--
+                    <div class="address">
+                        <label> Address : </label>
+                        <input type="text" name="address" class="input-address" placeholder="ex: Tanta, El-Nadi ST."required>
+                    </div>
+
+                    <div class="birth">
+                        <label> Birthdate : </label>
+                        <input type="date"  name="date" class="input-birth" placeholder="ex: 1/1/1998"required>
+                    </div>
+-->
+                    <div >
+                        <button type="submit" name="send" value="send" style="
+                                    height: 50px;
+                                    text-align: center;
+                                    background-color: #103f7e;
+                                    position: relative;
+                                    left: 250px;
+                                    border-radius: 10px;
+                                    margin-top: 20px;
+                                    margin-bottom:20px;
+                                    border:none;
+                                    padding: 10px 60px;
+                                    color:white;
+                                    font-size:15px;
+                                    font-weight:bold;
+                                    cursor: pointer; 
+                                    margin-left:240px   " >Add !</button>
+             
+                      </div>
+             </form>
+</div>
+    
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
   <script src="{{asset('Admin/lib/jquery/jquery.min.js')}}"></script>

@@ -31,6 +31,11 @@ Route::get('/login','LoginController@login')->name('login');
 Route::get('/services','ServicesController@services')->name('services');
 Route::get('/signup','SignupController@signup')->name('signup');
 
+Route::get('/customer',' CustomeruiController@customer')->name('customer');
+Route::get('/delegate',' DelegateuiController@delegate')->name('delegate');
+Route::get('/technicianui',' TechuiController@technicianui')->name('technicianui');
+
+
 
 /*
 Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');
@@ -46,6 +51,13 @@ Route::middleware(['auth','CheckRole'])->group(function () {
     Route::get('/customers','OrdersController@index')->name('customers');
     Route::get('/loginAdmin',' LoginAdminController@loginAdmin')->name('loginAdmin');
     Route::get('/maps','MapsController@maps')->name('maps');
+    Route::get('/updatecustomers','UpdatecustomerController@updatecustomers')->name('updatecustomers');
+    Route::get('/updatetech','UpdatetechController@updatetech')->name('updatetech');
+    Route::get('/delegatetable','delegatetableController@delegatetable')->name('delegatetable');
+    Route::get('/updatedelegate','UpdateDelegateController@updatedelegate')->name('updatedelegate');
+    Route::get('/Addtech',' AddTechController@Addtech')->name('Addtech');
+   
+
 });
 
 

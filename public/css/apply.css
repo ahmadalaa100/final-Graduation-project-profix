@@ -79,7 +79,7 @@ nav a:hover::before{
     opacity: 0.95;
     background-attachment: fixed;
     background-size: 100%;
-    width: 50%;
+    width: 40%;
     margin: 0px auto;
     margin-bottom: 1%;
     margin-top: 1%;
@@ -141,7 +141,7 @@ nav a:hover::before{
     height: 40px;
     width: 33%;
 }
-
+/*
 .button{
     display: inline-block;
      margin-bottom: 8%;
@@ -156,18 +156,25 @@ nav a:hover::before{
     background-color: #ffd31d;
     opacity: 0.95;
  
-}
+}*/
 
-.button a{
+.input-submit{
     display: inline-block;
-    width: 100%;
-    color:black;
-    font-size: 22px;
-    line-height: 40px;
-    text-decoration: none;
-    font-weight: 700;
+     margin-bottom: 8%;
+     margin-left:-150px;
+    width: 130px !important;
+    height: 40px !important;
+    text-align: center;
+    
+    border-radius: 20px;
+    position: relative;
+    /*left: 50px;*/
+    background-color: #ffd31d;
+    opacity: 0.95;
+    color: black;
+    border: none;
     cursor: pointer;
-    margin-bottom: 20px;
+    font-size: 16px;
 }
 .button a:hover{
     

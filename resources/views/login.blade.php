@@ -1,7 +1,7 @@
 <html>
 <head>
 <title> ProFix | LOGIN </title>
-<link rel="icon" href="{{asset('images/logo/logo-test.png')}}">
+<link rel="icon" href="{{asset('images/logo/p.jpg')}}">
 <link rel="stylesheet" href="{{asset('css/login.css') }}">
 
 </head>

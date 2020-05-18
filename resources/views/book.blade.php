@@ -4,7 +4,7 @@
         <title> ProFix | Book </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="{{asset('css/book.css') }}">
-        <link rel="icon" href="{{asset('images/logo/logo-test.png')}}">
+        <link rel="icon" href="{{asset('images/logo/p.jpg')}}">
     </head>
 
     <body>
@@ -55,7 +55,7 @@
                 <select name="spec"  class="choice">
                     <option selected disabled>  Choose a special  </option>
                     <option> Air Conditioning </option>
-                    <option> Carpentart </option>
+                    <option> Carpentary</option>
                     <option> Electrician </option>
                     <option> Painting </option>
                     <option> Plumbing </option>
@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="schedule">
-                    <input type="submit" value="Book">
+                    <input type="submit" value="Book Now !" class="input-submit">
                 </div>
             </div>
             </div>

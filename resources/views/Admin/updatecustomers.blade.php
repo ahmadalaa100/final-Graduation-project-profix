@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="{{asset('Admin/css/style.css') }}">
   
   <link href="{{asset('Admin/css/style-responsive.css') }}" rel="stylesheet">
+  <link href="{{asset('Admin/css/book1.css')}}" rel="stylesheet">
+
   
   <!-- =======================================================
     
@@ -71,6 +73,7 @@
           <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/p.png')}}" class="img-circle" width="80"></a></p>
           <h5 class="centered">ProFix</h5>
           <br>
+        
           <li class="mt">
             <a class="active" href="{{route('indexAdmin')}}">
               <i class="fa fa-dashboard"></i>
@@ -100,7 +103,8 @@
               <li><a href="{{route('customers')}}">Orders</a></li>
               <li><a href="{{route('technicians')}}">Technicians</a></li>
               <li><a href="{{route('delegatetable')}}">delegate</a></li>
-             
+            
+
              
             </ul>
           </li>
@@ -122,51 +126,82 @@
         MAIN CONTENT
         *********************************************************************************************************************************************************** -->
     <!--main content start-->
-    <section id="main-content">
-      <section class="wrapper">
-        <h3><i ></i>Customers</h3>
-        <div class="row">
-          
-           
-          <!-- /col-md-12 -->
-          <div class="col-md-12 mt">
-            <div class="content-panel">
-              <table class="table table-hover">
-                <h4><i></i>Orders</h4>
-                <hr>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>E-mail</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                    <th>Specialization</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                  </tr>
-                </thead>
-                <tbody>
-                @foreach($order as $i)
-                  <tr>
-                    <td>{{$i->name}}</td>
-                    <td>{{$i->mail}}</td>
-                    <td>{{$i->phone}}</td>
-                    <td>{{$i->addreess}}</td>
-                    <td>{{$i->spec}}</td>
-                    <td>{{$i->jobDate}}</td>
-                    <td>{{$i->jobTime}}</td>
+    <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class='text-center'>Update Customer</h1>
+            <br>
+            <br>
 
-                  </tr>
-                  @endforeach
-                  
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <!-- /col-md-12 -->
+            <form action="" method='post' class='text-center' >
+           
+
+            
+
+              <div class="name">
+                  <input type="text" value="" name="name" class="input-name" placeholder="Name*" required>
+              </div>
+
+              <div class="mail">
+                  <input type="email" value="" name="mail" class="input-mail" placeholder="Mail*">
+              </div>
+
+              <div class="phone">
+                  <input type="text" value=""  name="number" class="input-phone" placeholder="Phone*">
+              </div>
+
+              <div class="address">
+                  <input type="text"  value="" name="address" class="input-address" placeholder="Address*">
+              </div>
+          <div class="special">
+              <select name="special[]"   class="choice" required>
+              <option selected disabled >    </option>
+                <option value="Air Conditioning "> Air Conditioning </option>
+                <option value="Carpentart"> Carpentart </option>
+                <option value="Electrician"> Electrician </option>
+                <option value="Painting"> Painting </option>
+                <option value="Plumbing "> Plumbing </option>
+                <option value="Glass & Aluminiums"> Glass & Aluminium </option>
+            </select>
         </div>
-        {{ $order->links() }}
-  
+              <div class="date">
+                  <input type="date" value="" name="date" class="input-date">
+              </div>
+
+              <div class="time">
+                  <input type="time" value="" name="time" class="input-time">
+              </div>
+
+              <div >
+                  <button type="submit" name="send" value="send" style="
+                            height: 50px;
+                            text-align: center;
+                            background-color: #103f7e;
+                            position: relative;
+                            top: 30px;
+                            
+                            border-radius: 10px;
+                            margin-top: 20px;
+                            margin-bottom:70px;
+                            border:none;
+                            padding: 10px 60px;
+                            color:white;
+                            font-size:15px;
+                            font-weight:bold;
+                            cursor: pointer;      " > Update !</button>
+              </div>
+            </form>
+
+
+
+
+          </div>
+        </div>
+    
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
   <script src="{{asset('Admin/lib/jquery/jquery.min.js')}}"></script>

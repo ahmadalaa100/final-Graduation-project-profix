@@ -1,7 +1,9 @@
 body{
     margin: 0px;
-    background-image: url("../images/test4-head.jpg");
+    background-image: url("../images/pexels-photo-3847492.jpeg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     background-size: 100%;
 }
 *{
@@ -14,7 +16,6 @@ header{
     flex-wrap: nowrap;
     background-color: #103f7e;
     height: 105px;
-    width: 100%;
 }
 .logo{
     width: 20%;
@@ -202,174 +203,84 @@ nav a:hover::before{
         font-size: 16px;
     }
 }
-
- /* Conatct Area */
-
-.contact{
-    padding-left: 5%;
+.data{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    width: 90%;
+    margin: 2% auto;
     justify-content: space-around;
-    width: 80%;
-    margin: 0px auto;
-    margin-bottom: 3%;
-    margin-top: 10%;
-}    
-
-.info{
-    height: 400px;
+    margin-bottom: 4%;
+}
+form{
+    padding-top: 3%;
     width: 25%;
-    background-color: #10316b;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border: solid black 2px;
-    border-radius: 15px;
-    margin-right: 4%;
-    
-}
-@media(max-width:1100px){
-    .info{
-        width: 31%;
-        margin-right: 3%;
-    }
-}
-.info > div{
-    width: 100%;
-}
-.logo-contact img{
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    padding-left: 0px !important;
-}
-.info img{
-    padding-left: 10px;
-    width: 15%;
-}
-.text{
-    display: inline-block;
-    width: 80%;
+    height: 400px;
+    border: solid black 1px;
     text-align: center;
-}
-.text span{
-    color: white;
-    width: 100%;
-    display: inline-block;
-    font-size: 22px;
-}
-.logo-contact{
-    height: 100px;
-    width: 230px;
-    padding-left: 10px;
-}
-.logo-contact img{
-    height: 100%;
-    width: 100%;
-}
-
-.input-contact{
-    padding-top: 40px;
-    width: 60%;
-}
-
-.name .input-name{
-    width: 700px;
-    height: 50px;
-    margin-bottom: 1%;
-    padding-left: 5px;
-    border: black solid 2px;
-    border-radius: 5px;
-}
-
-.email .input-mail{
-    width: 700px;
-    height: 50px;
-    margin-bottom: 1%;
-    padding-left: 5px;
-    border: black solid 2px;
-    border-radius: 5px;
-}
-.subject .input-subject{
-    width: 700px;
-    height: 50px;
-    margin-bottom: 1%;
-    padding-left: 5px;
-    border: black solid 2px;
-    border-radius: 5px;
-}
-.message .input-message{
-    margin-bottom: 1%;
-    padding-left: 5px;
-    border: black solid 2px;
-    border-radius: 5px;
-}
-/*
-.button{
-    width: 120px;
-    margin: 0px auto;
-    margin-bottom: 3%;
-    background-color: #10316b;
-    border: black solid 2px;
     border-radius: 30px;
-    height: 50px;
-    margin-top: 50px;
-}*/
-
-.button .input-submit{
-    width: 120px;
-    margin: 0px auto;
-    margin-bottom: 3%;
-    background-color: #10316b;
-    border: black solid 2px;
-    border-radius: 30px;
-    height: 50px;
-    margin-top: 50px;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    margin-left: 300px;
-}/*
-.button:hover{
+    margin: 2% 0;
+    background-color: #103f7e;
+}
+form > input{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 2%;
+    border: black solid 1px;
+    border-radius: 20px;
+}
+table{
+    margin-top: 5%;
+    width: 50%; 
+    border: solid 2px black;
+    border-collapse: collapse;
     background-color: white;
-    border: black solid 2px;
 }
-.button:hover a{
-    color: black;
-}*/
-.map{
-    width: 70%;
-    margin: 0px auto;
-    margin-bottom: 5%;
-    border: black solid 2px;
-    border-radius: 10px;
+select{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 2%;
+    border: solid 1px black;
+    border-radius: 20px;
+    outline: none;
 }
-.map iframe{ 
-    border-radius: 10px;
+option{
+    outline: none;
+}
+th , tr{
+    border: black solid 2px;
     width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+.th{
+    background-color: #103f7e;
+    color: white;
+}
+#but{
+    margin-top: 4%;
+    width: 25%;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
-/*
-
-Footer
-
-*/
-
-.footer{
-    height: 300px;
+footer{
+    height: 250px;
     background-color: #103f7e;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    width: 100%;
     
 }
-.footer > div{
+footer > div{
     width: 50%;
 }
 .logo-footer{
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .logo-footer img{
   width: 50%;
@@ -378,7 +289,7 @@ Footer
 .social{
     width: 50%;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 .social span{
     display: block;
@@ -389,24 +300,13 @@ Footer
     text-transform: uppercase;
 }
 
-.footer .social img{
+footer .social img{
     display: inline-block;
     height: 50px;
-    margin-right: 5%;
+    margin-right: 3%;
     
 }
 .social img:hover{
     transform: rotate(360deg);
-    transition: 3s;
-}
-
-.copyright{
-    height: 50px;
-    background-color: black;  
-}
-
-.copyright .copy-text{
-    color: white;
-    line-height: 50px;
-    text-align: center;
+    transition: 2s;
 }
