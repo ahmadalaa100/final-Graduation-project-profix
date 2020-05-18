@@ -55,10 +55,13 @@
                 <img src="{{asset('images/1.jpg')}}" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="{{asset('images/image2.JPeG')}}" class="d-block w-100" alt="...">
+                <img src="{{asset('images/IMG_0850.jpg')}}" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="{{asset('images/test2.jpg')}}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{{asset('images/services.jpg')}}" class="d-block w-100" alt="...">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -69,10 +72,12 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
+            
           </div>
-          <div class="banner-image">
+          
+      <!--    <div class="banner-image">
              
-          </div>
+          </div>-->
      </div>
 
       <!-- Fast & Reliable banner -->

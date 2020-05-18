@@ -94,6 +94,7 @@
         <ul class="sub">
         <li><a href="{{route('customers')}}">Orders</a></li>
               <li><a href="{{route('technicians')}}">Technicians</a></li>
+              <li><a href="{{route('delegatetable')}}">delegate</a></li>
             
         </ul>
       </li>

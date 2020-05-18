@@ -94,9 +94,9 @@
                 <input type="file" name="certificate" multiple class="input-certificate" >
             </div>
 -->
-            
-                <input type="submit" value="Apply">
-           
+            <div class="button">
+                <input type="submit" value="Apply" class="input-submit">
+            </div>
         </div>
         </form>
         

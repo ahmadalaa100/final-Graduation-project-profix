@@ -46,6 +46,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/customers','OrdersController@index')->name('customers');
     Route::get('/loginAdmin',' LoginAdminController@loginAdmin')->name('loginAdmin');
     Route::get('/maps','MapsController@maps')->name('maps');
+    Route::get('/updatecustomers','UpdatecustomerController@updatecustomers')->name('updatecustomers');
+    Route::get('/updatetech','UpdatetechController@updatetech')->name('updatetech');
+    Route::get('/delegatetable','delegatetableController@delegatetable')->name('delegatetable');
+   
+
 });
 
 

@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="schedule">
-                    <input type="submit" value="Book">
+                    <input type="submit" value="Book Now !" class="input-submit">
                 </div>
             </div>
             </div>

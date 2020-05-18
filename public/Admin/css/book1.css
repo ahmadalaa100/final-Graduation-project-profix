@@ -1,0 +1,69 @@
+.input-name{
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+  
+   border: 1px solid;
+   position: relative;
+   
+}
+.input-mail{
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: 2px;
+   border: 1px solid;
+   position: relative;
+}
+.input-phone{
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+  
+   border: 1px solid;
+   position: relative;
+
+}
+.input-address{
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+   
+   border: 1px solid;
+   position: relative;
+  
+}
+.input-date{
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+    
+   border: 1px solid;
+   position: relative;
+   
+}
+.input-time{
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+   
+   border: 1px solid;
+   position: relative;
+   
+}
+.input-birth{
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+   
+   border: 1px solid;
+   position: relative;
+  
+}
+.special select{
+    padding: 5px;
+    border-radius: 5px;
+    width: 300px;
+    border: 1px solid;
+  
+}

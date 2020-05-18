@@ -98,30 +98,27 @@
                         <input type="text" name="subject" class="input-subject" placeholder="Subject * ">
                     </div>
 
-<<<<<<< HEAD
+
                     <div class="message">
-                        <textarea name='message' cols="90" rows="10" class="input-message" placeholder="Message*"></textarea>
+                        <textarea name='message' cols="93" rows="10" class="input-message" placeholder="Message*"></textarea>
                     </div>
-=======
-                <div class="message">
-<<<<<<< HEAD
-                <textarea cols="74" rows="10" class="input-message" placeholder="Message*"></textarea>
->>>>>>> 8de5be0482e9cb24b5724299882237f3b4bc8b28
-=======
-                <textarea cols="65" rows="10" class="input-message" placeholder="Message*"></textarea>
->>>>>>> c1ddbd1d2a488b53dab08e64bca0dd04d4135dd3
+
+               
+
+               
+
                 </div>
                 <div class="button">
-                    <input type="submit" value="Send">
+                    <input type="submit" value="Send" class="input-submit">
                 </div>
             </form>
             
         </div>
-
+<!--
         <div class="button">
             <a href="#"> Send </a>
          </div>
-
+-->
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d250.70692942209502!2d30.993490761689834!3d30.796157285384265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1585676856028!5m2!1sen!2seg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
             </iframe>

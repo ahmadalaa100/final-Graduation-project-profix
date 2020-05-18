@@ -8,6 +8,7 @@
   <meta name="author" content="Dashboard">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
   <title>ProFix || Admin </title>
+
   <!-- Favicons -->
   <link href="{{asset('Admin/img/favicon.png')}}" rel="icon">
   <link href="{{asset('Admin/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
@@ -20,13 +21,13 @@
   <link rel="stylesheet" href="{{asset('Admin/css/style.css') }}">
   
   <link href="{{asset('Admin/css/style-responsive.css') }}" rel="stylesheet">
+  <link href="{{asset('Admin/css/table-responsive.css') }}" rel="stylesheet">
   <!-- =======================================================
     Template Name: Dashio
     Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
     Author: TemplateMag.com
     License: https://templatemag.com/license/
   ======================================================= -->
-  
 </head>
 
 <body>
@@ -34,7 +35,6 @@
     <!-- **********************************************************************************************************************************************************
         TOP BAR CONTENT & NOTIFICATIONS
         *********************************************************************************************************************************************************** -->
-    <!--header start-->
    <!--header start-->
    <header class="header black-bg">
     <div class="sidebar-toggle-box">
@@ -117,49 +117,67 @@
     </div>
   </aside>
   <!--sidebar end-->
-    <!--sidebar end-->
     <!-- **********************************************************************************************************************************************************
         MAIN CONTENT
         *********************************************************************************************************************************************************** -->
     <!--main content start-->
     <section id="main-content">
-      <section class="wrapper site-min-height">
+      <section class="wrapper">
+        <h3><i></i> Delegate</h3>
         <div class="row mt">
-          <div class="col-sm-12">
-            <section class="panel">
-              <header class="panel-heading">
-                Google Map with Loaction List
-              </header>
-              <div class="panel-body">
-                <div id="gmap-list"></div>
-              </div>
-            </section>
+          <div class="col-lg-12">
+            <div class="content-panel">
+              <h4><i ></i> Delegate</h4>
+              <section id="unseen">
+                <table class="table table-bordered table-striped table-condensed">
+                  <thead>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>National_ID</th>
+                     
+                     <th>Phone</th>
+                      <th>E-mail</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                
+                    <tr>
+                      <td>Ahmed</td>
+                      <td> Alaa</td>
+                      
+                      <td class="numeric">12365478965412</td>
+                      <td class="numeric">01200291529</td>
+                      <td >ahmed@gmail.com</td>
+                      
+                    </tr>
+                
+                  </tbody>
+                </table>
+              </section>
+            </div>
+            <!-- /content-panel -->
           </div>
+          <!-- /col-lg-4 -->
         </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <section class="panel">
-              <header class="panel-heading">
-                Google Map with Tab Location
-              </header>
-              <div class="panel-body">
-                <div id="controls-tabs"></div>
-                <div id="info"></div>
-                <div id="gmap-tabs"></div>
-              </div>
-            </section>
+       
+            
+            </div>
+            <!-- /content-panel -->
           </div>
+          <!-- /col-lg-12 -->
         </div>
-        <!-- page end-->
+        <!-- /row -->
       </section>
       <!-- /wrapper -->
     </section>
     <!-- /MAIN CONTENT -->
     <!--main content end-->
-    
+   
   </section>
- <!-- js placed at the end of the document so the pages load faster -->
- <script src="{{asset('Admin/lib/jquery/jquery.min.js')}}"></script>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="{{asset('Admin/lib/jquery/jquery.min.js')}}"></script>
   <script src="{{asset('Admin/lib/bootstrap/js/bootstrap.min.js')}}"></script>
   <script class="include" type="text/javascript" src="{{asset('Admin/lib/jquery.dcjqaccordion.2.7.js')}}"></script>
   <script src="{{asset('Admin/lib/jquery.scrollTo.min.js')}}"></script>
@@ -167,34 +185,7 @@
   <!--common script for all pages-->
   <script src="{{asset('Admin/lib/common-scripts.js')}}"></script>
   <!--script for this page-->
-  
-  <!--Google Map-->
-  <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
-  <script src="{{asset('Adminlib/google-maps/maplace.js')}}"></script>
-  <script src="{{asset('Admin/lib/google-maps/data/points.js')}}"></script>
-  <script>
-    //ul list example
-    new Maplace({
-      locations: LocsB,
-      map_div: '#gmap-list',
-      controls_type: 'list',
-      controls_title: 'Choose a location:'
-    }).Load();
-
-    new Maplace({
-      locations: LocsB,
-      map_div: '#gmap-tabs',
-      controls_div: '#controls-tabs',
-      controls_type: 'list',
-      controls_on_map: false,
-      show_infowindow: false,
-      start: 1,
-      afterShow: function(index, location, marker) {
-        $('#info').html(location.html);
-      }
-    }).Load();
-  </script>
-
+  <!--script for this page-->
 </body>
 
 </html>
