@@ -4,7 +4,7 @@
         <title> ProFix | Contact Us </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="{{asset('css/contact.css') }}">
-        <link rel="icon" href="{{asset('images/logo/logo-test.png')}}">
+        <link rel="icon" href="{{asset('images/logo/p.jpg')}}">
     </head>
 
     <body>

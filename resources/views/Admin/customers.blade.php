@@ -12,7 +12,7 @@
   <title>ProFix || Admin </title>
 
   <!-- Favicons -->
-  <link href="{{asset('Admin/img/favicon.png')}}" rel="icon">
+  <link href="{{asset('Admin/img/p.jpg')}}" rel="icon">
   <link href="{{asset('Admin/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Bootstrap core CSS -->
@@ -26,10 +26,7 @@
   <link href="{{asset('Admin/css/style-responsive.css') }}" rel="stylesheet">
   
   <!-- =======================================================
-    Template Name: Dashio
-    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
+    
   ======================================================= -->
 </head>
 
@@ -71,8 +68,9 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/ui-sam.jpg')}}" class="img-circle" width="80"></a></p>
-          <h5 class="centered">Ahmed Alaa</h5>
+          <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/p.png')}}" class="img-circle" width="80"></a></p>
+          <h5 class="centered">ProFix</h5>
+          <br>
           <li class="mt">
             <a class="active" href="{{route('indexAdmin')}}">
               <i class="fa fa-dashboard"></i>

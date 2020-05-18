@@ -4,7 +4,7 @@
         <title> ProFix | Join Us </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="{{asset('css/apply.css') }}">
-        <link rel="icon" href="{{asset('images/logo/logo-test.png')}}">
+        <link rel="icon" href="{{asset('images/logo/p.jpg')}}">
         <!-- Font-style (Josefin) for (the text-wefix) -->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
     </head>
