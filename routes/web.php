@@ -40,7 +40,7 @@ Route::get('/maps','MapsController@maps')->name('maps');
 Route::get('/technicians','TechniciansController@index')->name('technicians');
 */
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth','CheckRole'])->group(function () {
     Route::get('/technicians','TechniciansController@index')->name('technicians');
     Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');
     Route::get('/customers','OrdersController@index')->name('customers');
@@ -78,3 +78,5 @@ Route::get('/delegate','DelegateController@index')->name('delegate');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/customerpage','HomeController@test')->name('customer')->middleware('auth');
