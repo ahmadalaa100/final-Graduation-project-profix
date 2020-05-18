@@ -55,7 +55,7 @@
                 <select name="spec"  class="choice">
                     <option selected disabled>  Choose a special  </option>
                     <option> Air Conditioning </option>
-                    <option> Carpentart </option>
+                    <option> Carpentary</option>
                     <option> Electrician </option>
                     <option> Painting </option>
                     <option> Plumbing </option>

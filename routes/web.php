@@ -31,6 +31,11 @@ Route::get('/login','LoginController@login')->name('login');
 Route::get('/services','ServicesController@services')->name('services');
 Route::get('/signup','SignupController@signup')->name('signup');
 
+Route::get('/customer',' CustomeruiController@customer')->name('customer');
+Route::get('/delegate',' DelegateuiController@delegate')->name('delegate');
+Route::get('/technicianui',' TechuiController@technicianui')->name('technicianui');
+
+
 
 /*
 Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');
