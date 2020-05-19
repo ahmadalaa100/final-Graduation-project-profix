@@ -52,7 +52,15 @@ Route::get('/technicians','TechniciansController@index')->name('technicians');
 */
 
 Route::middleware(['auth','CheckRole'])->group(function () {
+
     Route::get('/technicians','TechniciansController@index')->name('technicians');
+    Route::get('/techfreeze/{id}','TechniciansController@freeze')->name('techfreeze');
+    Route::get('/techactive/{id}','TechniciansController@active')->name('techactive');
+    Route::get('/techdelete/{id}','TechniciansController@destroy')->name('techdelete');
+    Route::get('/techedit/{id}','TechniciansController@edit')->name('techedit');
+    Route::post('/techupdate/{id}','TechniciansController@update')->name('techupdate');
+
+
     Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');
     Route::get('/customers','OrdersController@index')->name('customers');
 
