@@ -6,7 +6,7 @@
         <link rel="icon" href="{{asset('images/logo/p.jpg')}}">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{aset('css/technician.css')}}">
+        <link rel="stylesheet" href="{{asset('css/technician.css')}}">
     </head>
 
     <body>
