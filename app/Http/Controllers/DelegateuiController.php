@@ -10,4 +10,7 @@ class DelegateuiController extends Controller
     public function delegate(){
         return view("delegate");
     }
+    public function delegateform(){
+        return view("delegateform");
+    }
 }

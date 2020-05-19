@@ -235,6 +235,8 @@ table{
     border: solid 2px black;
     border-collapse: collapse;
     background-color: white;
+    margin-left: 500px;
+   
 }
 select{
     width: 80%;
@@ -273,6 +275,7 @@ footer{
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
+   
     
 }
 footer > div{
