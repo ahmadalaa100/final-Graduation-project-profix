@@ -55,6 +55,11 @@ Route::middleware(['auth','CheckRole'])->group(function () {
     Route::get('/technicians','TechniciansController@index')->name('technicians');
     Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');
     Route::get('/customers','OrdersController@index')->name('customers');
+
+    Route::get('/deleteOrder/{id}','OrdersController@destroy')->name('deleteOrder');
+    Route::get('/editOrder/{id}','OrdersController@edit')->name('editOrder');
+    Route::post('/updateOrder/{id}','OrdersController@update')->name('updateOrder');
+
     Route::get('/loginAdmin',' LoginAdminController@loginAdmin')->name('loginAdmin');
     Route::get('/maps','MapsController@maps')->name('maps');
     Route::get('/updatecustomers','UpdatecustomerController@updatecustomers')->name('updatecustomers');

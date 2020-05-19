@@ -137,29 +137,29 @@
             <br>
             <br>
 
-            <form action="" method='post' class='text-center' >
+            <form action="{{route('updateOrder',['id' => $o->id])}}" method='post' class='text-center' >
            
 
             
-
+              {{csrf_field()}}
               <div class="name">
-                  <input type="text" value="" name="name" class="input-name" placeholder="Name*" required>
+                  <input type="text" value="{{$o->name}}" name="name" class="input-name" placeholder="Name*" required>
               </div>
 
               <div class="mail">
-                  <input type="email" value="" name="mail" class="input-mail" placeholder="Mail*">
+                  <input type="email" value="{{$o->mail}}" name="mail" class="input-mail" placeholder="Mail*">
               </div>
 
               <div class="phone">
-                  <input type="text" value=""  name="number" class="input-phone" placeholder="Phone*">
+                  <input type="text" value="{{$o->phone}}"  name="phone" class="input-phone" placeholder="Phone*">
               </div>
 
               <div class="address">
-                  <input type="text"  value="" name="address" class="input-address" placeholder="Address*">
+                  <input type="text"  value="{{$o->addreess}}" name="addreess" class="input-address" placeholder="Address*">
               </div>
           <div class="special">
-              <select name="special[]"   class="choice" required>
-              <option selected disabled >    </option>
+              <select name="spec"   class="choice" required>
+              <option selected disabled >{{$o->spec}}</option>
                 <option value="Air Conditioning "> Air Conditioning </option>
                 <option value="Carpentart"> Carpentart </option>
                 <option value="Electrician"> Electrician </option>
@@ -169,11 +169,11 @@
             </select>
         </div>
               <div class="date">
-                  <input type="date" value="" name="date" class="input-date">
+                  <input type="date" value="{{$o->jobDate}}" name="jobDate" class="input-date">
               </div>
 
               <div class="time">
-                  <input type="time" value="" name="time" class="input-time">
+                  <input type="time" value="{{$o->jobTime}}" name="jobTime" class="input-time">
               </div>
 
               <div >

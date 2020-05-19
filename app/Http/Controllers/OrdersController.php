@@ -60,7 +60,9 @@ class OrdersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $orders = Orders::findOrfail($id);
+
+        return view('Admin.updatecustomers')->with('o',$orders);
     }
 
     /**
@@ -72,7 +74,19 @@ class OrdersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $orders = Orders::findOrFail($id);
+        $orders->name = $request->name;
+        $orders->mail = $request->mail;
+        $orders->addreess = $request->addreess;
+        $orders->phone = $request->phone;
+        $orders->jobDate = $request->jobDate;
+        $orders->jobTime = $request->jobTime;
+        $orders->spec = $request->spec;
+
+        $orders->save();
+
+        return redirect()->route('customers');
+
     }
 
     /**
@@ -83,6 +97,9 @@ class OrdersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $orders = Orders::findOrfail($id);
+        $orders->delete();
+
+        return redirect()->back();
     }
 }
