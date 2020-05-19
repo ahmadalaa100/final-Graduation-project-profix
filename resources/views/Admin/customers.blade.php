@@ -143,6 +143,8 @@
                     <th>Specialization</th>
                     <th>Date</th>
                     <th>Time</th>
+                    <th>Delete</th>
+                    <th>Update</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -155,6 +157,8 @@
                     <td>{{$i->spec}}</td>
                     <td>{{$i->jobDate}}</td>
                     <td>{{$i->jobTime}}</td>
+                    <td> <a href="{{route('deleteOrder',['id'=> $i->id])}}" class='btn btn-danger'>Delete</a> </td>
+                    <td> <a href="{{route('editOrder',['id'=> $i->id])}}" class='btn btn-info'>Update</a> </td>
 
                   </tr>
                   @endforeach

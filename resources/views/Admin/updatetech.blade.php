@@ -130,34 +130,34 @@
             <br>
             <br>
 
-            <form action="" method='post' class='forml' >
-           
+            <form action="{{route('techupdate',['id' => $tech->id])}}" method='post' class='forml' >
+              {{csrf_field()}}
             <div class="data">
            
                 
 
                     <div class="fname">
                         <label> First Name : </label>
-                        <input type="text" value=""
-                         name="fname" placeholder="ex: Ahmed" class="input-fname"  required>
+                        <input type="text" value="{{$tech->firstName}}"
+                         name="firstName" placeholder="ex: Ahmed" class="input-fname"  required>
                     </div>
 
                     <div class="lname">
                         <label> Last Name : </label>
-                        <input type="text"value=""
-                         name="lname" placeholder="ex: Ali" class="input-lname"required>
+                        <input type="text"value="{{$tech->lastName}}"
+                         name="lastName" placeholder="ex: Ali" class="input-lname"required>
                     </div>
 
                     <div class="id">
                         <label> National ID : </label>
-                        <input type="text" value=""
-                         name="nid" placeholder="ex:298012345678912" class="input-id"required>
+                        <input type="text" value="{{$tech->national_id}}"
+                         name="national_id" placeholder="ex:298012345678912" class="input-id"required>
                     </div>
 
                     <div class="specialization">
                         <label> Specialization : </label>
-                    <select name="special[]"required>
-                        <option selected disabled></option>
+                    <select name="spec"required>
+                        <option selected disabled>{{$tech->spec}}</option>
                         <option value="A/C Specialist"> A/C Specialist </option>
                         <option value="Carpenter"> Carpenter </option>
                         <option value="Electrician"> Electrician </option>
@@ -169,12 +169,12 @@
 
                     <div class="number">
                         <label> Mobile Number : </label>
-                        <input type="text" value="" name="number" class="input-number" placeholder="ex: 01234567890"required>
+                        <input type="text" value="{{$tech->phone}}" name="phone" class="input-number" placeholder="ex: 01234567890"required>
                     </div>
 
                     <div class="email">
                         <label> E-mail : </label>
-                        <input type="email"value="" name="email" class="input-email" placeholder="ex: info@example.com"required>
+                        <input type="email"value="{{$tech->mail}}" name="mail" class="input-email" placeholder="ex: info@example.com"required>
                     </div>
 
                    
