@@ -148,7 +148,7 @@
         <footer>
             <div class="join">
                 <span> Interested to join our community ? </span>
-                <a href="{{route('apply')}}" > Apply Now .</a>
+                <a href="{{route('apply')}}" > Apply Now !</a>
             </div>
             <div class="copyright">
                 

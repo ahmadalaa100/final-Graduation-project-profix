@@ -33,6 +33,7 @@
                 </div>
             </div>
         </header>
+        <!--
         <div class="data">
            <form action="" method="POST" target="_blank">
              <input type="text" name="" placeholder=" *Customer Name">
@@ -53,7 +54,7 @@
              <input type="submit"  id="but">
              
            </form>
-
+-->
           <table>
                
               <tr>
@@ -78,7 +79,21 @@
            </table>
 
         </div>
-
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
         <footer>
             <div class="logo-footer">

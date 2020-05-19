@@ -10,4 +10,8 @@ class CustomeruiController extends Controller
     public function customer(){
         return view("customer");
     }
+
+    public function customerform(){
+        return view("customerform");
+    }
 }

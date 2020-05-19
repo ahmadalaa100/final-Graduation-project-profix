@@ -37,6 +37,12 @@ Route::get('/technicianui','TechuiController@technicianui')->name('technicianui'
 
 
 
+Route::get('/customerform','CustomeruiController@customerform')->name('customerform');
+Route::get('/delegateform','DelegateuiController@delegateform')->name('delegateform');
+Route::get('/techform','TechuiController@techform')->name('techform');
+
+
+
 /*
 Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');
 Route::get('/customers','OrdersController@index')->name('customers');
