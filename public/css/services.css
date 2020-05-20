@@ -51,7 +51,7 @@ nav{
     line-height: 105px;
     padding-top: 10px;
     margin-right: 5%;
-    margin-left: 3%;
+   margin-left: 3%;
 }
 @media(max-width:1250px){
     nav{
@@ -226,7 +226,7 @@ nav a:hover::before{
     position: absolute;
     top: 61%;
     right: 42%;
-    color: black;
+    color: white;
     letter-spacing: 1px;
 }
 @media(max-width:1230px){

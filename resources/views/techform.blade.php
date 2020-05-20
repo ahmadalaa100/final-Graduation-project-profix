@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> ProFix | Book </title>
+        <title> ProFix | Update </title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="{{asset('css/book.css') }}">
         <link rel="icon" href="{{asset('images/logo/p.jpg')}}">
@@ -35,7 +35,7 @@
             <div class="book">
                 <div class="calendar">
                     <img src="{{asset('images/calendar.png')}}">
-                    <span>Update</span>
+                    <span> &nbsp &nbsp &nbsp Update</span>
                 </div>
                 <div class="name">
                     <input type="text" name="name" class="input-name" placeholder=" Customer Name*">

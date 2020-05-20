@@ -83,7 +83,8 @@
             </a>
           <ul class="sub">
           
-            <li><a href="{{route('loginAdmin')}}">Login</a></li>
+          <li><a href="{{route('Addtech')}}">Add Technician</a></li>
+              <li><a href="{{route('Adddelegate')}}">Add Delegate</a></li>
            
           </ul>
         </li>
@@ -136,6 +137,9 @@
                      
                      <th>Phone</th>
                       <th>E-mail</th>
+                      <th>Freeze/Activate</th>
+                      <th>delete</th>
+                      <th>Update</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -147,6 +151,9 @@
                       <td class="numeric">12365478965412</td>
                       <td class="numeric">01200291529</td>
                       <td >ahmed@gmail.com</td>
+                      <td> <a href="" class='btn btn-info'>Freeze</a> </td>
+                      <td> <a href="" class='btn btn-danger'>Delete</a> </td>
+                      <td> <a href="" class='btn btn-primary'>Edit</a> </td>
                       
                     </tr>
                 

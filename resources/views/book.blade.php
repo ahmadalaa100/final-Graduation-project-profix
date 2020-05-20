@@ -67,6 +67,12 @@
                     <option value='visa'> Visa </option>
                     
                 </select>
+                <select name="tech"  class="choice">
+                    <option selected disabled>  choose a Technician ..  </option>
+                    <option value='cash'> </option>
+                    <option value='visa'>  </option>
+                    
+                </select>
 
                 <div class="date">
                     <input type="date" name="date" class="input-date">

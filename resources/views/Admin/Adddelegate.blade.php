@@ -133,7 +133,7 @@
             <br>
             <br>
             <br>
-            <h1 class='text-center'>Update Delegate</h1>
+            <h1 class='text-center'>Add delegate</h1>
             <br>
             <br>
     <form  class='forml' >
@@ -210,7 +210,7 @@
                                     font-size:15px;
                                     font-weight:bold;
                                     cursor: pointer; 
-                                    margin-left:240px   " >Update !</button>
+                                    margin-left:240px   " >Add !</button>
              
                       </div>
              </form>
