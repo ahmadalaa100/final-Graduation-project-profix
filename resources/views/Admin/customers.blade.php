@@ -144,6 +144,8 @@
                     <th>Specialization</th>
                     <th>Date</th>
                     <th>Time</th>
+                    <th>Assign</th>
+                    <th>Progress</th>
                     <th>Delete</th>
                     <th>Update</th>
                   </tr>
@@ -156,8 +158,27 @@
                     <td>{{$i->phone}}</td>
                     <td>{{$i->addreess}}</td>
                     <td>{{$i->spec}}</td>
+                   
                     <td>{{$i->jobDate}}</td>
                     <td>{{$i->jobTime}}</td>
+                    <td>
+                    <form action="{{route('changeAssign',['id' => $i->id])}}" method='post'>
+                    {{csrf_field()}}
+                      <select name="tech" id="">
+
+                        <option value="" selected>{{$i->firstName . ' ' . $i->lastName}}</option>
+                        @foreach($tech as $t)
+                          @if($t->firstName . ' ' .$t->lastName == $i->firstName . ' ' . $i->lastName)
+                          @continue
+                          @endif
+                          <option value="{{$t->id}}">{{$t->firstName . ' ' .$t->lastName . ' ' . $t->spec }}</option>
+                        @endforeach
+      
+                      </select>
+                      <td> <input class='btn btn-dark' type="submit" value="Progress"> </td>
+
+                    </form>
+                    </td>
                     <td> <a href="{{route('deleteOrder',['id'=> $i->id])}}" class='btn btn-danger'>Delete</a> </td>
                     <td> <a href="{{route('editOrder',['id'=> $i->id])}}" class='btn btn-info'>Update</a> </td>
 
