@@ -26,7 +26,7 @@
               <a href="{{route('about')}}"> About Us </a>
               <a href="{{route('contact')}}"> Contact </a>
          </nav>
-
+<!--
         <div class="sign">
          <div class="signin">
              <a href="{{route('login')}}" > Sign In </a>
@@ -41,7 +41,7 @@
              <!-- "YOU USE IT WE FIX IT  " -->
            <!-- </p> -->
          <!-- </div> -->
-       </div>
+      <!-- </div>-->
      </header>
 
 

@@ -25,7 +25,7 @@
                     <a href="{{route('about')}}"> About Us </a>
                     <a href="{{route('contact')}}"> Contact </a>
            </nav>
-
+<!--
            <div class="sign">
             <div class="signin">
                 <a href="{{route('login')}}" target="_self"> Sign In </a>
@@ -34,14 +34,14 @@
             <div class="signup">
                 <a href="{{route('signup')}}" target="_self"> Not a member ? Sign Up </a>
             </div>
-            <!-- <div class="header-text"> -->
+            <div class="header-text"> -->
               <!-- <h1 class="heading">ProFix </h1> -->
               <!-- <p class="header-paragraph"> -->
                 <!-- "YOU USE IT WE FIX IT  " -->
               <!-- </p> -->
-            <!-- </div> -->
+            <!-- </div>
           </div>
-       
+        -->
 
         </header>
 

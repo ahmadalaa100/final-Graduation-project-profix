@@ -37,7 +37,6 @@ header{
 
 .links-head nav{
     text-align: center;
-   
 }
 
 .links-head a{
@@ -77,15 +76,16 @@ nav a:hover::before{
 }
 .book{
     position: relative;
-    top: 100px;
+    top: 150px;
     width: 35%;
-    height: 750px;
+    height: 580px;
     background-color: #032c63;
     margin: 0px auto;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     border-radius: 20px;
     opacity: 0.95;
-    margin-top: -50px;
+   margin-top: -50px;
+   bottom: 300px;
 }
 
 .calendar{
@@ -103,12 +103,14 @@ nav a:hover::before{
 }
 
 .calendar span{
-    font-size: 22px;
+    font-size: 26px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     letter-spacing: 1px;
     position: relative;
     left: 20px;
+    margin-left: -15%;
+  top: 20px;
 }
 .name .input-name{
     width: 70%;
@@ -204,7 +206,7 @@ nav a:hover::before{
     text-align: center;
     background-color: #103f7e;
     position: relative;
-    top: 30px;
+    top: 80px;
     left: 200px;
     border-radius: 20px;
     margin-top: 20px;
@@ -216,14 +218,16 @@ nav a:hover::before{
     -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out
+
 }
+
 .input-submit:hover{
     width: 25%;
     height: 50px;
     text-align: center;
     background-color: #fece02;
     position: relative;
-    top: 30px;
+    top: 80px;
     left: 200px;
     border-radius: 20px;
     margin-top: 20px;
@@ -233,8 +237,6 @@ nav a:hover::before{
     cursor: pointer;
     border: none;
 }
-
-
 
 .footer4{
     height: 300px;

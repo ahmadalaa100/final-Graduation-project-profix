@@ -84,7 +84,8 @@
             </a>
           <ul class="sub">
           
-            <li><a href="{{route('loginAdmin')}}">Login</a></li>
+          <li><a href="{{route('Addtech')}}">Add Technician</a></li>
+              <li><a href="{{route('Adddelegate')}}">Add Delegate</a></li>
            
           </ul>
         </li>
