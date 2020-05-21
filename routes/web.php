@@ -67,6 +67,7 @@ Route::middleware(['auth','CheckRole'])->group(function () {
     Route::get('/deleteOrder/{id}','OrdersController@destroy')->name('deleteOrder');
     Route::get('/editOrder/{id}','OrdersController@edit')->name('editOrder');
     Route::post('/updateOrder/{id}','OrdersController@update')->name('updateOrder');
+    Route::post('/changeAssign/{id}','OrdersController@changeAssign')->name('changeAssign');
 
     Route::get('/loginAdmin',' LoginAdminController@loginAdmin')->name('loginAdmin');
     Route::get('/maps','MapsController@maps')->name('maps');
@@ -78,10 +79,7 @@ Route::middleware(['auth','CheckRole'])->group(function () {
 
     Route::get('/updatedelegate','UpdateDelegateController@updatedelegate')->name('updatedelegate');
     Route::get('/Addtech',' AddTechController@Addtech')->name('Addtech');
-    Route::post('/ass',function()
-    {
-        return 'ok';
-    });
+    
     Route::get('/Addtech','AddTechController@Addtech')->name('Addtech');
     Route::post('/Addtech','AddTechController@insert')->name('inserttech');
     Route::get('/Adddelegate','AdddelegateController@Adddelegate')->name('Adddelegate');

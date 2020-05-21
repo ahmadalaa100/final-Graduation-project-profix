@@ -17,7 +17,10 @@ class BookController extends Controller
     public function create(Request $request)
     {
         $order = new Orders;
-
+        if($request->tech == 0)
+        {
+            $request->tech = null;
+        }
         $order->name = $request->name;
         $order->mail = $request->mail;
         $order->phone = $request->phone;

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 use App\Orders;
+use App\Technicians;
+
 class OrdersController extends Controller
 {
     /**
@@ -16,8 +18,17 @@ class OrdersController extends Controller
     
     public function index()
     {
-        $orders = DB::table('orders')->orderBy('created_at', 'desc')->paginate(10);
-        return view("Admin.customers")->with('order',$orders);
+        $orders = DB::table('orders')
+        ->leftJoin('technicians','technicians.id','=','orders.tech_id')
+        ->select('orders.id','orders.name','orders.mail','orders.phone','orders.addreess','orders.spec','orders.jobDate','orders.jobTime'
+        ,'technicians.firstName','technicians.lastName')
+        ->orderBy('orders.created_at', 'desc')->paginate(10);
+
+        $tech = Technicians::all();
+        
+        return view("Admin.customers")
+        ->with('order',$orders)
+        ->with('tech',$tech);
     }
 
     /**
@@ -99,6 +110,17 @@ class OrdersController extends Controller
     {
         $orders = Orders::findOrfail($id);
         $orders->delete();
+
+        return redirect()->back();
+    }
+
+    public function changeAssign(Request $request,$id)
+    {
+        $order = Orders::findOrFail($id);
+
+        $order->tech_id = $request->tech;
+
+        $order->save();
 
         return redirect()->back();
     }

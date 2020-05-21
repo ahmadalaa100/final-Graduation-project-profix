@@ -70,9 +70,9 @@
                 <select name="tech"  class="choice">
                 <option selected disabled>Choose Technicans . . .</option>
 
-                <option>NONE</option>
+                <option value='0'>NONE</option>
                 @foreach($tech as $t)
-                    <option value="{{$t->id}}">{{$t->firstName . ' ' . $t->lastName}}</option>
+                    <option value="{{$t->id}}">{{$t->firstName . ' ' . $t->lastName . ' ' . $t->spec}}</option>
                 @endforeach
                 </select>
 

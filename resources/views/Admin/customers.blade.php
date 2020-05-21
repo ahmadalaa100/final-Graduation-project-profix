@@ -162,11 +162,18 @@
                     <td>{{$i->jobDate}}</td>
                     <td>{{$i->jobTime}}</td>
                     <td>
-                    <form action="/ass" method='post'>
-                      <select name="s" id="">
-                        <option value="">Kareem</option>
-                        <option value="">Kareem</option>
-                        <option value="">Kareem</option>
+                    <form action="{{route('changeAssign',['id' => $i->id])}}" method='post'>
+                    {{csrf_field()}}
+                      <select name="tech" id="">
+
+                        <option value="" selected>{{$i->firstName . ' ' . $i->lastName}}</option>
+                        @foreach($tech as $t)
+                          @if($t->firstName . ' ' .$t->lastName == $i->firstName . ' ' . $i->lastName)
+                          @continue
+                          @endif
+                          <option value="{{$t->id}}">{{$t->firstName . ' ' .$t->lastName . ' ' . $t->spec }}</option>
+                        @endforeach
+      
                       </select>
                       <td> <input class='btn btn-dark' type="submit" value="Progress"> </td>
 
