@@ -68,10 +68,12 @@
                     
                 </select>
                 <select name="tech"  class="choice">
-                    <option selected disabled>  choose a Technician ..  </option>
-                    <option value='cash'> </option>
-                    <option value='visa'>  </option>
-                    
+                <option selected disabled>Choose Technicans . . .</option>
+
+                <option>NONE</option>
+                @foreach($tech as $t)
+                    <option value="{{$t->id}}">{{$t->firstName . ' ' . $t->lastName}}</option>
+                @endforeach
                 </select>
 
                 <div class="date">
