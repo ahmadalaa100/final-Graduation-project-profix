@@ -74,7 +74,9 @@ Route::middleware(['auth','CheckRole'])->group(function () {
     Route::get('/updatetech','UpdatetechController@updatetech')->name('updatetech');
     Route::get('/delegatetable','delegatetableController@delegatetable')->name('delegatetable');
     Route::get('/updatedelegate','UpdateDelegateController@updatedelegate')->name('updatedelegate');
-    Route::get('/Addtech',' AddTechController@Addtech')->name('Addtech');
+    Route::get('/Addtech','AddTechController@Addtech')->name('Addtech');
+    Route::post('/Addtech','AddTechController@insert')->name('inserttech');
+    Route::get('/Adddelegate','AdddelegateController@Adddelegate')->name('Adddelegate');
    
 
 });

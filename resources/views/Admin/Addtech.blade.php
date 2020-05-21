@@ -88,7 +88,8 @@
               </a>
             <ul class="sub">
             
-              <li><a href="{{route('loginAdmin')}}">Login</a></li>
+            <li><a href="{{route('Addtech')}}">Add Technician</a></li>
+              <li><a href="{{route('Adddelegate')}}">Add Delegate</a></li>
              
             </ul>
           </li>
@@ -135,7 +136,8 @@
             <h1 class='text-center'>Add Technician</h1>
             <br>
             <br>
-    <form  class='forml' >
+    <form  class='forml' action="{{route('Addtech')}}" method="post">
+        {{csrf_field()}}
            
             <div class="data">
            
@@ -156,13 +158,13 @@
                     <div class="id">
                         <label> National ID : </label>
                         <input type="text" 
-                         name="nid" placeholder="ex:298012345678912" class="input-id"required>
+                         name="id" placeholder="ex:298012345678912" class="input-id"required>
                     </div>
 
                     <div class="specialization">
                         <label> Specialization : </label>
-                    <select name="special[]"required>
-                        <option selected disabled>  </option>
+                    <select name="spec"required>
+                        <option selected disabled> Choose special .. </option>
                         <option value="A/C Specialist"> A/C Specialist </option>
                         <option value="Carpenter"> Carpenter </option>
                         <option value="Electrician"> Electrician </option>
@@ -175,12 +177,12 @@
 
                     <div class="number">
                         <label> Mobile Number : </label>
-                        <input type="text"  name="number" class="input-number" placeholder="ex: 01234567890"required>
+                        <input type="text"  name="phone" class="input-number" placeholder="ex: 01234567890"required>
                     </div>
 
                     <div class="email">
                         <label> E-mail : </label>
-                        <input type="email" name="email" class="input-email" placeholder="ex: info@example.com"required>
+                        <input type="email" name="mail" class="input-email" placeholder="ex: info@example.com"required>
                     </div>
 <!--
                     <div class="address">

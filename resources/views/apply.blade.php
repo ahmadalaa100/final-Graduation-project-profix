@@ -3,7 +3,7 @@
     <head>
         <title> ProFix | Join Us </title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="{{asset('css/apply.css') }}">
+        <link rel="stylesheet" href="{{asset('css/applynew.css') }}">
         <link rel="icon" href="{{asset('images/logo/p.jpg')}}">
         <!-- Font-style (Josefin) for (the text-wefix) -->
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -33,67 +33,41 @@
         <form action="{{route('applyTech')}}" method="post">
         {{csrf_field()}}
         <div class="data">
-            <div class="text">
-               Complete the form and Join Us !
-            </div>
-            <div class="fname">
-                <label> First Name : </label>
-                <input type="text" name="fname" placeholder="ex: Ahmed" class="input-fname">
-            </div>
+       <div class="book">
+                <div class="calendar">
+                  <!--  <img src="{{asset('images/calendar.png')}}">-->
+                    <span>  Complete the form and Join Us ! </span>
+                </div>
+                <div class="name">
+                    <input type="text" name="fname" class="input-name" placeholder="Enter Your first name*">
+                </div>
 
-            <div class="lname">
-                <label> Last Name : </label>
-                <input type="text" name="lname" placeholder="ex: Ali" class="input-lname">
-            </div>
+                <div class="name">
+                    <input type="text" name="lname" class="input-name" placeholder="Enter Your last name*">
+                </div>
 
-            <div class="id">
-                <label> National ID : </label>
-                <input type="text" name="id" placeholder="ex:298012345678912" class="input-id">
-            </div>
+                <div class="phone">
+                    <input type="text" name="id" class="input-phone" placeholder="Enter Your National ID *">
+                </div>
 
-            <div class="specialization">
-                <label> Your Specialization : </label>
-               <select name="spec"  >
-                   <option selected disabled> Select your specialization </option>
-                   <option> A/C Specialist </option>
-                   <option> Carpenter </option>
-                   <option> Electrician </option>
-                   <option> Painter </option>
-                   <option> Plumber </option>
-                   <option> Glass & Aluminium </option>
-               </select>
-            </div>
-
-            <div class="number">
-                <label> Mobile Number : </label>
-                <input type="text" name="phone" class="input-number" placeholder="ex: 01234567890">
-            </div>
-
-            <div class="email">
-                <label> E-mail : </label>
-                <input type="email" name="mail" class="input-email" placeholder="ex: info@example.com">
-            </div>
-<!--
-            <div class="address">
-                <label> Address : </label>
-                <input type="text" name="address" class="input-address" placeholder="ex: Tanta, El-Nadi ST.">
-            </div>
-
-            <div class="birth">
-                <label> Birthdate : </label>
-                <input type="date" name="date" class="input-birth" placeholder="ex: 1/1/1998">
-            </div>
-
-            <div class="photo">
-                <label> Your Personal Photo : </label>
-                <input type="file" name="photo" class="input-photo" >
-            </div>
-
-            <div class="certificate">
-                <label> Criminal Record Certificate : </label>
-                <input type="file" name="certificate" multiple class="input-certificate" >
-            </div>
--->
+                <select name="spec"  class="choice">
+                    <option selected disabled>  Choose Your  special  </option>
+                    <option> Air Conditioning </option>
+                    <option> Carpentary</option>
+                    <option> Electrician </option>
+                    <option> Painting </option>
+                    <option> Plumbing </option>
+                    <option> Glass & Aluminium </option>
+                </select>
+                
+    
+            <div class="phone">
+                    <input type="text" name="phone" class="input-phone" placeholder="Enter Your Phone *">
+                </div>
+                <div class="mail">
+                    <input type="email" name="mail" class="input-mail" placeholder="Enter Your Mail *">
+                </div>
+        
             <div class="button">
                 <input type="submit" value="Apply" class="input-submit">
             </div>
