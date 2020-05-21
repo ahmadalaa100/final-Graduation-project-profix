@@ -143,6 +143,8 @@
                     <th>Specialization</th>
                     <th>Date</th>
                     <th>Time</th>
+                    <th>Assign</th>
+                    <th>Progress</th>
                     <th>Delete</th>
                     <th>Update</th>
                   </tr>
@@ -155,8 +157,20 @@
                     <td>{{$i->phone}}</td>
                     <td>{{$i->addreess}}</td>
                     <td>{{$i->spec}}</td>
+                   
                     <td>{{$i->jobDate}}</td>
                     <td>{{$i->jobTime}}</td>
+                    <td>
+                    <form action="/ass" method='post'>
+                      <select name="s" id="">
+                        <option value="">Kareem</option>
+                        <option value="">Kareem</option>
+                        <option value="">Kareem</option>
+                      </select>
+                      <td> <input class='btn btn-dark' type="submit" value="Progress"> </td>
+
+                    </form>
+                    </td>
                     <td> <a href="{{route('deleteOrder',['id'=> $i->id])}}" class='btn btn-danger'>Delete</a> </td>
                     <td> <a href="{{route('editOrder',['id'=> $i->id])}}" class='btn btn-info'>Update</a> </td>
 
