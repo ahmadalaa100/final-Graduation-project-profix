@@ -131,11 +131,9 @@
                 <table class="table table-bordered table-striped table-condensed">
                   <thead>
                     <tr>
-                      <th>First Name</th>
-                      <th>Last Name</th>
-                      <th>National_ID</th>
+                      <th>Name</th>
                      
-                     <th>Phone</th>
+                      <th>Phone</th>
                       <th>E-mail</th>
                       <th>Freeze/Activate</th>
                       <th>delete</th>
@@ -143,20 +141,18 @@
                     </tr>
                   </thead>
                   <tbody>
-                
+                  @foreach($dele as $d)
                     <tr>
-                      <td>Ahmed</td>
-                      <td> Alaa</td>
+                      <td>{{$d->name}}</td>
+                      <td> {{$d->phone}}</td>
                       
-                      <td class="numeric">12365478965412</td>
-                      <td class="numeric">01200291529</td>
-                      <td >ahmed@gmail.com</td>
+                      <td class="numeric">{{$d->mail}}</td>
                       <td> <a href="" class='btn btn-info'>Freeze</a> </td>
                       <td> <a href="" class='btn btn-danger'>Delete</a> </td>
                       <td> <a href="" class='btn btn-primary'>Edit</a> </td>
                       
                     </tr>
-                
+                  @endforeach
                   </tbody>
                 </table>
               </section>
