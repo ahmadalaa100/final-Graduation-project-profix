@@ -72,7 +72,10 @@ Route::middleware(['auth','CheckRole'])->group(function () {
     Route::get('/maps','MapsController@maps')->name('maps');
     Route::get('/updatecustomers','UpdatecustomerController@updatecustomers')->name('updatecustomers');
     Route::get('/updatetech','UpdatetechController@updatetech')->name('updatetech');
+    
     Route::get('/delegatetable','delegatetableController@delegatetable')->name('delegatetable');
+    Route::get('/delegatetabledelete/{id}','delegatetableController@destroy')->name('deleteTable');
+
     Route::get('/updatedelegate','UpdateDelegateController@updatedelegate')->name('updatedelegate');
     Route::get('/Addtech',' AddTechController@Addtech')->name('Addtech');
     Route::post('/ass',function()

@@ -135,7 +135,6 @@
                      
                       <th>Phone</th>
                       <th>E-mail</th>
-                      <th>Freeze/Activate</th>
                       <th>delete</th>
                       <th>Update</th>
                     </tr>
@@ -146,9 +145,8 @@
                       <td>{{$d->name}}</td>
                       <td> {{$d->phone}}</td>
                       
-                      <td class="numeric">{{$d->mail}}</td>
-                      <td> <a href="" class='btn btn-info'>Freeze</a> </td>
-                      <td> <a href="" class='btn btn-danger'>Delete</a> </td>
+                      <td class="numeric">{{$d->email}}</td>
+                      <td> <a href="{{route('deleteTable',['id' => $d->id])}}" class='btn btn-danger'>Delete</a> </td>
                       <td> <a href="" class='btn btn-primary'>Edit</a> </td>
                       
                     </tr>
