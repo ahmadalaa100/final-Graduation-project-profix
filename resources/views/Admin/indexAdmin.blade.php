@@ -54,7 +54,7 @@
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
           <li> 
-              <a class="dropdown-item" href="{{ route('logout') }}"
+              <a class="logout" href="{{ route('logout') }}"
                   onclick="event.preventDefault();
                   document.getElementById('logout-form').submit();">
                   {{ __('Logout') }}
@@ -73,68 +73,69 @@
         MAIN SIDEBAR MENU
         *********************************************************************************************************************************************************** -->
     <!--sidebar start-->
-    <aside>
-      <div id="sidebar" class="nav-collapse ">
-        <!-- sidebar menu start-->
-        <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/p.png')}}" class="img-circle" width="80"></a></p>
-          
-          
-          <h5 class="centered">ProFix</h5>
-          <br>
+<aside>
+  <div id="sidebar" class="nav-collapse ">
+    
+    <ul class="sidebar-menu" id="nav-accordion">
+      <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/p.png')}}" class="img-circle" width="80"></a></p>
+      <h5 class="centered">ProFix</h5>
+      <br>
         
-         
 
-          <li class="mt">
-            <a class="active" href="{{route('indexAdmin')}}">
-              <i class="fa fa-dashboard"></i>
-              <span>Dashboard</span>
-              </a>
-          </li>
-          
-         
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-book"></i>
-              <span>Extra Pages</span>
-              </a>
-            <ul class="sub">
-            
-           
-              <li><a href="{{route('Addtech')}}">Add Technician</a></li>
-              <li><a href="{{route('Adddelegate')}}">Add Delegate</a></li>
-             
-            </ul>
-          </li>
-         
-          <li class="sub-menu">
-            <a href="javascript:;">
-              <i class="fa fa-th"></i>
-              <span>Data Tables</span>
-              </a>
-            <ul class="sub">
-            <li><a href="{{route('customers')}}">Orders</a></li>
-            <li><a href="{{route('technicians')}}">Technicians</a></li>
-            <li><a href="{{route('delegatetable')}}">delegate</a></li>
-           
+      <li class="mt">
+        <a class="active"  href="{{route('indexAdmin')}}">
+          <i class="fa fa-dashboard"></i>
+          <span>Dashboard</span>
+          </a>
+      </li>
 
+
+      <li class="sub-menu">
+        <a href="javascript:;">
+          <i class="fa fa-book"></i>
+          <span>Extra Pages</span>
+          </a>
+        <ul class="sub">
+
+        <li><a href="{{route('Addtech')}}">Add Technician</a></li>
+        <li><a href="{{route('register')}}">Add Delegate</a></li>
+            <li><a href="{{route('register')}}">Add Admin</a></li>
              
-            </ul>
-          </li>
-         
+             </ul>
+           </li>
           
-         
-          <li>
-          <a href="{{route('maps')}}">
-              <i class="fa fa-map-marker"></i>
-              <span>Google Maps </span>
-              </a>
-          </li>
+           <li class="sub-menu">
+             <a href="javascript:;">
+               <i class="fa fa-th"></i>
+               <span>Data Tables</span>
+               </a>
+             <ul class="sub">
+               <li><a href="{{route('customers')}}">Orders</a></li>
+               <li><a href="{{route('technicians')}}">Technicians</a></li>
+               <li><a href="{{route('delegatetable')}}">delegate</a></li>
+             
         </ul>
-        <!-- sidebar menu end-->
-      </div>
-    </aside>
-    <!--sidebar end-->
+      </li>
+
+
+<!--
+      <li>
+        <a href="{{route('maps')}}">
+          <i class="fa fa-map-marker"></i>
+          <span>Google Maps </span>
+          </a>
+      </li>-->
+      <li>
+        <a href="{{route('customers')}}">
+          <i class="fa fa-book"></i>
+          <span>Data </span>
+          </a>
+      </li>
+    </ul>
+   
+  </div>
+</aside>
+<!--sidebar end-->
     <!-- **********************************************************************************************************************************************************
         MAIN CONTENT
         *********************************************************************************************************************************************************** -->

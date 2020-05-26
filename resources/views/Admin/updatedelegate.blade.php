@@ -57,7 +57,16 @@
       </div>
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="{{route('loginAdmin')}}">Logout</a></li>
+          <li> <a class="logout" href="{{ route('logout') }}"
+                  onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();">
+                  {{ __('Logout') }}
+              </a></li>
+              <li>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+          </li>
         </ul>
       </div>
     </header>
@@ -89,7 +98,8 @@
             <ul class="sub">
             
             <li><a href="{{route('Addtech')}}">Add Technician</a></li>
-              <li><a href="{{route('Adddelegate')}}">Add Delegate</a></li>
+            <li><a href="{{route('register')}}">Add Delegate</a></li>
+            <li><a href="{{route('register')}}">Add Admin</a></li>
              
             </ul>
           </li>
@@ -143,11 +153,11 @@
                 
 
                     <div class="fname">
-                        <label> First Name : </label>
+                        <label>  Name : </label>
                         <input type="text" 
-                         name="fname" placeholder="ex: Ahmed" class="input-fname"  required>
+                         name="fname" placeholder="ex: Ahmed" class="input-fname"  required style="margin-left:35px;"> 
                     </div>
-
+<!--
                     <div class="lname">
                         <label> Last Name : </label>
                         <input type="text" 
@@ -159,7 +169,7 @@
                         <input type="text" 
                          name="nid" placeholder="ex:298012345678912" class="input-id"required>
                     </div>
-<!--
+
                     <div class="specialization">
                         <label> Specialization : </label>
                     <select name="special[]"required>
@@ -175,8 +185,8 @@
 -->
 
                     <div class="number">
-                        <label> Mobile Number : </label>
-                        <input type="text"  name="number" class="input-number" placeholder="ex: 01234567890"required>
+                        <label> Phone : </label>
+                        <input type="text"  name="number" class="input-number" placeholder="ex: 01234567890"required  style="margin-left:32px;">
                     </div>
 
                     <div class="email">

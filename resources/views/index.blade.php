@@ -36,15 +36,15 @@
 
               <div class="signup">
                   <a href="{{route('signup')}}" > Not a member ? Sign Up </a>
-              </div>
-              <!-- <div class="header-text"> -->
-                <!-- <h1 class="heading">ProFix </h1> -->
-                <!-- <p class="header-paragraph"> -->
-                  <!-- "YOU USE IT WE FIX IT  " -->
-                <!-- </p> -->
-              <!-- </div> -->
+             
             </div>
-
+            <!--
+            <div class="header-text"> 
+               <h1 class="heading">ProFix </h1> 
+                <p class="header-paragraph"> 
+                  "YOU USE IT WE FIX IT  " 
+                </p> 
+               </div> -->
         </header>
 
        <!-- Banner -->
@@ -72,7 +72,8 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-            
+            </div>
+              
           </div>
           
       <!--    <div class="banner-image">

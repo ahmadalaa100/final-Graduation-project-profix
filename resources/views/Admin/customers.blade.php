@@ -55,7 +55,18 @@
       </div>
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="{{route('loginAdmin')}}">Logout</a></li>
+        <li> 
+              <a class="logout" href="{{ route('logout') }}"
+                  onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();">
+                  {{ __('Logout') }}
+              </a>
+            </li>
+            <li>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+          </li>
         </ul>
       </div>
     </header>
@@ -87,7 +98,8 @@
             <ul class="sub">
             
             <li><a href="{{route('Addtech')}}">Add Technician</a></li>
-              <li><a href="{{route('Adddelegate')}}">Add Delegate</a></li>
+            <li><a href="{{route('register')}}">Add Delegate</a></li>
+            <li><a href="{{route('register')}}">Add Admin</a></li>
              
             </ul>
           </li>
@@ -146,8 +158,9 @@
                     <th>Time</th>
                     <th>Assign</th>
                     <th>Progress</th>
-                    <th>Delete</th>
+                   
                     <th>Update</th>
+                    <th>Delete</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -164,9 +177,9 @@
                     <td>
                     <form action="{{route('changeAssign',['id' => $i->id])}}" method='post'>
                     {{csrf_field()}}
-                      <select name="tech" id="">
+                      <select name="tech" id="" style="height:25px;width:200px; border-radius: 5px;">
 
-                        <option value="" selected>{{$i->firstName . ' ' . $i->lastName}}</option>
+                        <option value="" selected >{{$i->firstName . ' ' . $i->lastName}}</option>
                         @foreach($tech as $t)
                           @if($t->firstName . ' ' .$t->lastName == $i->firstName . ' ' . $i->lastName)
                           @continue
@@ -175,12 +188,13 @@
                         @endforeach
       
                       </select>
-                      <td> <input class='btn btn-dark' type="submit" value="Progress"> </td>
+                      <td> <input class='btn btn-primary' type="submit" value="Progress"> </td>
 
                     </form>
                     </td>
-                    <td> <a href="{{route('deleteOrder',['id'=> $i->id])}}" class='btn btn-danger'>Delete</a> </td>
+                   
                     <td> <a href="{{route('editOrder',['id'=> $i->id])}}" class='btn btn-info'>Update</a> </td>
+                    <td> <a href="{{route('deleteOrder',['id'=> $i->id])}}" class='btn btn-danger'>Delete</a> </td>
 
                   </tr>
                   @endforeach
