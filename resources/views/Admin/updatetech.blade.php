@@ -51,7 +51,16 @@
   </div>
   <div class="top-menu">
     <ul class="nav pull-right top-menu">
-      <li><a class="logout"href="{{route('loginAdmin')}}">Logout</a></li>
+      <li> <a class="logout" href="{{ route('logout') }}"
+                  onclick="event.preventDefault();
+                  document.getElementById('logout-form').submit();">
+                  {{ __('Logout') }}
+              </a></li>
+              <li>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                @csrf
+            </form>
+          </li>
     </ul>
   </div>
 </header>-->
@@ -64,7 +73,7 @@
   <div id="sidebar" class="nav-collapse ">
     
     <ul class="sidebar-menu" id="nav-accordion">
-      <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/p.png')}}" class="img-circle" width="80"></a></p>
+      <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/logo.jpg')}}" class="img-circle" width="80"></a></p>
       <h5 class="centered">ProFix</h5>
       <br>
         
@@ -85,7 +94,8 @@
         <ul class="sub">
 
         <li><a href="{{route('Addtech')}}">Add Technician</a></li>
-              <li><a href="{{route('Adddelegate')}}">Add Delegate</a></li>
+        <li><a href="{{route('register')}}">Add Delegate</a></li>
+            <li><a href="{{route('register')}}">Add Admin</a></li>
              
              </ul>
            </li>
