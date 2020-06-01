@@ -28,6 +28,7 @@ class BookController extends Controller
         $order->addreess = $request->address;
         $order->jobDate = $request->date;
         $order->spec = $request->spec;
+        $order->user_id = $request->user_id;
         $order->tech_id = $request->tech;
         $order->jobTime = $request->time;
 

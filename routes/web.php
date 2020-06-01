@@ -21,7 +21,7 @@ Route::get('/about','AboutController@about')->name('about');
 Route::get('/apply','ApplyController@apply')->name('apply');
 Route::post('/apply','ApplyController@insert')->name('applyTech');
 
-Route::get('/book','BookController@book')->name('book');
+Route::get('/book','BookController@book')->name('book')->middleware('auth');
 Route::post('/book','BookController@create')->name('bookJob');
 
 Route::get('/contact','ContactController@contact')->name('contact');
@@ -31,7 +31,7 @@ Route::get('/login','LoginController@login')->name('login');
 Route::get('/services','ServicesController@services')->name('services');
 Route::get('/signup','SignupController@signup')->name('signup');
 
-Route::get('/customer','CustomeruiController@customer')->name('customer');
+Route::get('/customerUI','CustomeruiController@customer')->name('customerUI');
 Route::get('/delegate','DelegateuiController@delegate')->name('delegate');
 Route::get('/technicianui','TechuiController@technicianui')->name('technicianui');
 
@@ -83,10 +83,15 @@ Route::middleware(['auth','CheckRole'])->group(function () {
     Route::get('/Addtech','AddTechController@Addtech')->name('Addtech');
     Route::post('/Addtech','AddTechController@insert')->name('inserttech');
     Route::get('/Adddelegate','AdddelegateController@Adddelegate')->name('Adddelegate');
+
+
    
 
 });
 
+
+Route::get('payment','PayController@index');
+Route::post('stripe', 'PayController@charge')->name('stripe.post');
 
 /*
 Route::middleware(['auth'])->group(function () {
