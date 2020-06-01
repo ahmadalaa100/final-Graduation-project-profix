@@ -19,6 +19,11 @@ class CheckRole
         {
             return redirect('customerpage');
         }
+
+        if($request->user()->role == 'delegate')
+        {
+            return redirect('delegate');
+        }
         return $next($request);
     }
 }
