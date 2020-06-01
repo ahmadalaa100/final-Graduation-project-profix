@@ -15,11 +15,13 @@ class CustomersController extends Controller
 
     public function addUser(Request $request)
     {
-        return User::create([
+        $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
             'phone'=>$request->phone
         ]);
+
+        return redirect()->route('indexAdmin');
     }
 }
