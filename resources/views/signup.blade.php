@@ -32,6 +32,7 @@
           
           <input type="text" name="username" placeholder="Username"/>
           <input type="text" name="email" placeholder="Email"/>
+          <input type="text" name="phone" placeholder="phone"/>
           <input type="password" name="password" placeholder="Password"/>
         
           <input type="password" name="password2" placeholder="Retype password"/>
