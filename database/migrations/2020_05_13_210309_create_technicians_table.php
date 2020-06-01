@@ -21,7 +21,7 @@ class CreateTechniciansTable extends Migration
             $table->string('phone');
             $table->string('spec');
             $table->string('national_id');
-            $table->boolean('active')->default(1);
+            $table->boolean('active')->default(0);
             $table->timestamps();
         });
     }
