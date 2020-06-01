@@ -21,7 +21,7 @@ Route::get('/about','AboutController@about')->name('about');
 Route::get('/apply','ApplyController@apply')->name('apply');
 Route::post('/apply','ApplyController@insert')->name('applyTech');
 
-Route::get('/book','BookController@book')->name('book');
+Route::get('/book','BookController@book')->name('book')->middleware('auth');
 Route::post('/book','BookController@create')->name('bookJob');
 
 Route::get('/contact','ContactController@contact')->name('contact');
@@ -83,6 +83,8 @@ Route::middleware(['auth','CheckRole'])->group(function () {
     Route::get('/Addtech','AddTechController@Addtech')->name('Addtech');
     Route::post('/Addtech','AddTechController@insert')->name('inserttech');
     Route::get('/Adddelegate','AdddelegateController@Adddelegate')->name('Adddelegate');
+
+
    
 
 });

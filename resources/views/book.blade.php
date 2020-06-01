@@ -92,6 +92,7 @@
                 <div class="schedule">
                     <input type="submit" value="Book Now !" class="input-submit">
                 </div>
+                <input type="hidden" name="user_id" value='{{Auth::id()}}'>
             </div>
             </div>
         </form>

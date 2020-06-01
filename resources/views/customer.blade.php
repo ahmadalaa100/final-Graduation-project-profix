@@ -59,23 +59,31 @@
                
               <tr>
                  <th class="th"> Name </th>
-                 <th class="th"> E-mail </th>
-                 <th class="th"> Phone </th>
                  <th class="th"> Address </th>
                  <th class="th"> Special </th>
-                 <th class="th"> Date </th>
                  <th class="th"> Time </th>
-              </tr>
+                 <th class="th"> Date </th>
 
-              <tr>
-                 <th> Ali </th>
-                 <th> info@email.com </th>
-                 <th> +20123456789 </th>
-                 <th> tanta </th>
-                 <th> Electrician </th>
-                 <th> 18/5/2020</th>
-                 <th>5:00pm</th>
+                 <th class="th"> Pay </th>
+                 <th class="th"> Is Payed ? </th>
               </tr>
+            @foreach($orders as $d)
+              <tr>
+                 <th> {{$d->name}} </th>
+                 <th> {{$d->addreess}} </th>
+                 <th> {{$d->spec}} </th>
+                 <th> {{$d->jobTime}} </th>
+                 <th> {{$d->jobDate}} </th>
+                 @if($d->payed == 0)
+                 <th><a href="#" class='btn btn-primary'>Pay</a></th>
+                 <th>No</th>
+                 @else
+                 <th>None</th>
+                 <th>Yes</th>
+                 @endif
+                 
+              </tr>
+              @endforeach
            </table>
 
         </div>

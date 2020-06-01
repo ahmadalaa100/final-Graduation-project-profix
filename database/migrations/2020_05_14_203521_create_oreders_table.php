@@ -25,6 +25,10 @@ class CreateOredersTable extends Migration
             $table->unsignedBigInteger('tech_id')->nullable();
             $table->foreign('tech_id')->references('id')->on('technicians');
 
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users');
+
+            $table->boolean('payed')->default(0);
             $table->date('jobDate');
             $table->time('jobTime');
             $table->string('image')->nullable();
