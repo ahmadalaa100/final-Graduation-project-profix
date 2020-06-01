@@ -76,6 +76,8 @@ Route::middleware(['auth','CheckRole'])->group(function () {
     
     Route::get('/delegatetable','delegatetableController@delegatetable')->name('delegatetable');
     Route::get('/delegatetabledelete/{id}','delegatetableController@destroy')->name('deleteTable');
+    Route::get('/delegatetable/edit/{id}','delegatetableController@edit')->name('delegateEdit');
+    Route::post('/delegatetable/update/{id}','delegatetableController@update')->name('delegateUpdate');
 
     Route::get('/updatedelegate','UpdateDelegateController@updatedelegate')->name('updatedelegate');
     Route::get('/Addtech',' AddTechController@Addtech')->name('Addtech');
