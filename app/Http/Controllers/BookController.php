@@ -10,7 +10,7 @@ class BookController extends Controller
 {
     //
     public function book(){
-        $tech = Technicians::all();
+        $tech = Technicians::all()->where('active',1);
 
         return view("book")->with('tech',$tech);
     }

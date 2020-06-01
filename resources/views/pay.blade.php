@@ -26,7 +26,6 @@
   
 <div class="container">
   
-    <h1>Laravel 5 - Stripe Payment Gateway Integration Example <br/> ItSolutionStuff.com</h1>
   
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -48,7 +47,7 @@
                         </div>
                     @endif
   
-                    <form role="form" action="{{ route('stripe.post') }}" method="post" class="require-validation"
+                    <form role="form" action="{{ route('stripe.post',['id'=>$order->id]) }}" method="post" class="require-validation"
                                                      data-cc-on-file="false"
                                                     data-stripe-publishable-key="{{ env('STRIPE_KEY') }}"
                                                     id="payment-form">
