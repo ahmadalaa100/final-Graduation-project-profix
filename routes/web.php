@@ -31,7 +31,7 @@ Route::get('/login','LoginController@login')->name('login');
 Route::get('/services','ServicesController@services')->name('services');
 Route::get('/signup','SignupController@signup')->name('signup');
 
-Route::get('/customer','CustomeruiController@customer')->name('customer');
+Route::get('/customerUI','CustomeruiController@customer')->name('customerUI');
 Route::get('/delegate','DelegateuiController@delegate')->name('delegate');
 Route::get('/technicianui','TechuiController@technicianui')->name('technicianui');
 
@@ -86,6 +86,7 @@ Route::middleware(['auth','CheckRole'])->group(function () {
    
 
 });
+
 
 Route::get('payment','PayController@index');
 Route::post('stripe', 'PayController@charge')->name('stripe.post');
