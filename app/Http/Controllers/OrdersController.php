@@ -24,7 +24,7 @@ class OrdersController extends Controller
         ,'technicians.firstName','technicians.lastName')
         ->orderBy('orders.created_at', 'desc')->paginate(10);
 
-        $tech = Technicians::all();
+        $tech = Technicians::all()->where('active',1);
         
         return view("Admin.customers")
         ->with('order',$orders)
