@@ -32,6 +32,13 @@ class BookController extends Controller
         $order->tech_id = $request->tech;
         $order->jobTime = $request->time;
 
+        // handle image
+
+        $image = $request->photo;
+
+        $new_image = time() . $image->getClientOriginalName();
+        $image->move('uploads/',$new_image);
+        $order->image = 'uploads/' . $new_image;
 
         $order->save();
 
