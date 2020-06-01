@@ -77,8 +77,8 @@
   <div id="sidebar" class="nav-collapse ">
     
     <ul class="sidebar-menu" id="nav-accordion">
-      <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/logo.jpg')}}" class="img-circle" width="80"></a></p>
-      <h5 class="centered">ProFix</h5>
+      <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/pro.png')}}" class="img-circle" width="80"></a></p>
+      <h3 class="centered">ProFix</h3>
       <br>
         
 
@@ -241,7 +241,7 @@
                     ];
                     var myDoughnut = new Chart(document.getElementById("serverstatus02").getContext("2d")).Doughnut(doughnutData);
                   </script>
-                  <p>April 17, 2014</p>
+                  <p>April 17, 2020</p>
                   <footer>
                     <div class="pull-left">
                       <h5><i class="fa fa-hdd-o"></i> 17 GB</h5>
@@ -314,7 +314,7 @@
               <div class="col-md-4 mb">
                 <div class="twitter-panel pn">
                   <i class="fa fa-twitter fa-4x"></i>
-                  <p>Git in touch with us on Twitter</p>
+                  <p>Get in touch with us on Twitter</p>
                   <p class="user">@profix</p>
                 </div>
               </div>
@@ -358,7 +358,7 @@
                   <div class="badge badge-hot">Best</div>
                   <img src="{{asset('Admin/img/IMG_0850.jpg')}}" width="200" alt="">
                   <h5 class="mt">Plumbing</h5>
-                  <h6>TOTAL SALES: 1388</h6>
+                  <h6>TOTAL SALES: 13,880 LE</h6>
                   <button class="btn btn-small btn-theme04">FULL REPORT</button>
                 </div>
               </div>
@@ -373,9 +373,9 @@
                     </div>
                   </div>
                   <div class="pr2-social centered">
-                    <a href="https://twitter.com/Ahmadalaa100?fbclid=IwAR17T4LNJSYVJjO-j9meg5pLEdunMmsU9IatxUncwg9c-S3j2J07MjbsiTg"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/Ahmedmousa612"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="https://twitter.com/Ahmadalaa100?fbclid=IwAR17T4LNJSYVJjO-j9meg5pLEdunMmsU9IatxUncwg9c-S3j2J07MjbsiTg"target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/Ahmedmousa612"target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmadalaa100/"target="_blank"><i class="fa fa-linkedin"></i></a>
                   </div>
                 </div>
                 <!-- /panel -->
@@ -471,18 +471,7 @@
               </div>
             </div>
             <!-- Third Activity -->
-            <div class="desc">
-              <div class="thumb">
-                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-              </div>
-              <div class="details">
-                <p>
-                  <muted>3 Hours Ago</muted>
-                  <br/>
-                  <a href="#">Mohamed Mostafa</a> purchased a year subscription.<br/>
-                </p>
-              </div>
-            </div>
+           
             <!-- Fourth Activity -->
             <div class="desc">
               <div class="thumb">
@@ -497,7 +486,7 @@
               </div>
             </div>
             <!-- USERS ONLINE SECTION -->
-            <h4 class="centered mt">TEAM MEMBERS ONLINE</h4>
+            <h4 class="centered mt">TEAM MEMBERS </h4>
             <!-- First Member -->
             <div class="desc">
               <div class="thumb">
@@ -542,6 +531,18 @@
               <div class="details">
                 <p>
                   <a href="#">Asser Ibrahim</a><br/>
+                  <muted>Available</muted>
+                </p>
+              </div>
+            </div>
+
+            <div class="desc">
+              <div class="thumb">
+                <img class="img-circle" src="{{asset('Admin/img/ahmed.jpg')}}" width="35px" height="35px" align="">
+              </div>
+              <div class="details">
+                <p>
+                  <a href="#">Ahmed Alaa</a><br/>
                   <muted>Available</muted>
                 </p>
               </div>

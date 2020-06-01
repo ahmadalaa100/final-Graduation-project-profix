@@ -59,21 +59,22 @@
             <div class="image" id="image1">
                 <img src="{{asset('images/ac.jpg')}}">
                 <div class="text">
-                   <span> Air Conditioning </span>
+                    
+                   <span><br> <br>  <br>  <br>  Air Conditioning </span>
                </div>
             </div>
 
             <div class="image" id="image2">
                 <img src="{{asset('images/carpenter.jpeg')}}">
               <div class="text">
-                 <span> Carpentry </span>
+                 <span><br> <br>  <br>  <br>  Carpentry </span>
              </div>
            </div>
 
             <div class="image" id="image3">
                 <img src="{{asset('images/electrician.jpg')}}">
                <div class="text">
-                  <span> Electrician </span>
+                  <span> <br> <br>  <br>  <br> Electrician </span>
               </div>
            </div>
 
@@ -81,7 +82,7 @@
            <div class="image" id="image4">
             <img src="{{asset('images/painting.jpg')}}">
                <div class="text">
-                  <span> Painting </span>
+                  <span> <br> <br>  <br>  <br> Painting </span>
               </div>
            </div>
 
@@ -89,14 +90,14 @@
             <div class="image" id="image5">
                 <img src="{{asset('images/plumbing.jpg')}}">
                <div class="text">
-                  <span> Plumbing </span>
+                  <span><br> <br>  <br>  <br>  Plumbing </span>
               </div>
             </div>
             
             <div class="image" id="image6">
                 <img src="{{asset('images/glass.jpg')}}">
                 <div class="text">
-                   <span> Glass & Aluminium </span>
+                   <span> <br> <br>  <br>  <br> Glass & Aluminium </span>
                </div>
             </div>
 

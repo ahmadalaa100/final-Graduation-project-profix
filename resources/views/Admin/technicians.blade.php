@@ -77,8 +77,8 @@
     <div id="sidebar" class="nav-collapse ">
       <!-- sidebar menu start-->
       <ul class="sidebar-menu" id="nav-accordion">
-        <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/logo.jpg')}}" class="img-circle" width="80"></a></p>
-        <h5 class="centered">ProFix</h5>
+        <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/pro.png')}}" class="img-circle" width="80"></a></p>
+        <h3 class="centered">ProFix</h3>
         <br>
        
         <li class="mt">
@@ -152,8 +152,9 @@
                       <th>Phone</th>
                       <th>E-mail</th>
                       <th>Freeze/Activate</th>
-                      <th>delete</th>
                       <th>Update</th>
+                      <th>delete</th>
+                    
                     </tr>
                   </thead>
                   <tbody>
@@ -167,12 +168,15 @@
                       <td class="numeric">{{$t->mail}}</td>
                       @if($t->active == 1)
                       <td> <a href="{{route('techfreeze',['id' => $t->id])}}" class='btn btn-info'>Freeze</a> </td>
-                      <td> <a href="{{route('techdelete',['id' => $t->id])}}" class='btn btn-danger'>Delete</a> </td>
                       <td> <a href="{{route('techedit',['id' => $t->id])}}" class='btn btn-primary'>Edit</a> </td>
+                      <td> <a href="{{route('techdelete',['id' => $t->id])}}" class='btn btn-danger'>Delete</a> </td>
+                     
                       @else
                       <td> <a href="{{route('techactive',['id' => $t->id])}}" class='btn btn-info'>Activate</a> </td>
-                      <td> <a href="{{route('techdelete',['id' => $t->id])}}" class='btn btn-danger'>Delete</a> </td>
                       <td> <a href="{{route('techedit',['id' => $t->id])}}" class='btn btn-primary'>Edit</a> </td>
+                      <td> <a href="{{route('techdelete',['id' => $t->id])}}" class='btn btn-danger'>Delete</a> </td>
+                     
+                      
                       @endif
                     </tr>
                   @endforeach

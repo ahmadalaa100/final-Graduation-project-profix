@@ -276,9 +276,10 @@ nav a:hover::before{
     overflow: hidden;
 }
 .image:hover span{
-    height: 15%;
+    height: 100%;
     transition: .5s;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .button{
@@ -292,7 +293,7 @@ nav a:hover::before{
     }  
 }
 .button form input{
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color: #103f7e;
     color: white;
     height: 65px;
     width: 90%;
@@ -302,7 +303,7 @@ nav a:hover::before{
     font-size: 25px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 15px;
 }
 @media(max-width:1250px){
     .button form input{

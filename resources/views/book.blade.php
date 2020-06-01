@@ -38,21 +38,21 @@
                     <span> Schedule a service </span>
                 </div>
                 <div class="name">
-                    <input type="text" name="name" class="input-name" placeholder="Name*">
+                    <input type="text" name="name" class="input-name" placeholder="Name*" required>
                 </div>
 
                 <div class="mail">
-                    <input type="email" name="mail" class="input-mail" placeholder="Mail*">
+                    <input type="email" name="mail" class="input-mail" placeholder="Mail*" required>
                 </div>
 
                 <div class="phone">
-                    <input type="text" name="phone" class="input-phone" placeholder="Phone*">
+                    <input type="text" name="phone" class="input-phone" placeholder="Phone*" required>
                 </div>
 
                 <div class="address">
-                    <input type="text" name="address" class="input-address" placeholder="Address*">
+                    <input type="text" name="address" class="input-address" placeholder="Address*" required>
                 </div>
-                <select name="spec"  class="choice">
+                <select name="spec"  class="choice" required>
                     <option selected disabled>  Choose a special  </option>
                     <option> Air Conditioning </option>
                     <option> Carpentary</option>
@@ -61,13 +61,13 @@
                     <option> Plumbing </option>
                     <option> Glass & Aluminium </option>
                 </select>
-                <select name="pay"  class="choice">
+                <select name="pay"  class="choice" required>
                     <option selected disabled>  choose Payment type..  </option>
                     <option value='cash'> Cash</option>
                     <option value='visa'> Visa </option>
                     
                 </select>
-                <select name="tech"  class="choice">
+                <select name="tech"  class="choice" required>
                 <option selected disabled>Choose Technicans . . .</option>
 
                 <option value='0'>NONE</option>
@@ -77,16 +77,16 @@
                 </select>
 
                 <div class="date">
-                    <input type="date" name="date" class="input-date">
+                    <input type="date" name="date" class="input-date" required>
                 </div>
                 
                 
                 <div class="time">
-                    <input type="time" name="time" class="input-time">
+                    <input type="time" name="time" class="input-time" required>
                 </div>
                 
                 <div class="photo">
-                    <input type="file" name="photo" class="input-photo" placeholder="Insert Photo to your Problem">
+                    <input type="file" name="photo" class="input-photo" placeholder="Insert Photo to your Problem" >
                 </div>
 
                 <div class="schedule">

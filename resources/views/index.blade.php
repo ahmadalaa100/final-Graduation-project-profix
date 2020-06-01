@@ -55,14 +55,15 @@
                 <img src="{{asset('images/1.jpg')}}" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
+                <img src="{{asset('images/image2c1.jpeg')}}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
                 <img src="{{asset('images/IMG_0850.jpg')}}" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="{{asset('images/test2.jpg')}}" class="d-block w-100" alt="...">
               </div>
-              <div class="carousel-item">
-                <img src="{{asset('images/services.jpg')}}" class="d-block w-100" alt="...">
-              </div>
+             
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -110,7 +111,7 @@
          We love to hear from you and are happy to answer any questions
        </div>
 
-      <div class="contact-bg">
+      <div class="contact-bg" style="background-image: url('{{ asset('images/contact-bg.png')}}');">
            <div class="contact-us">
                <div class="phone">
                 <img src="{{asset('images/phone.png')}}">

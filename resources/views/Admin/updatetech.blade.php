@@ -73,8 +73,8 @@
   <div id="sidebar" class="nav-collapse ">
     
     <ul class="sidebar-menu" id="nav-accordion">
-      <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/logo.jpg')}}" class="img-circle" width="80"></a></p>
-      <h5 class="centered">ProFix</h5>
+      <p class="centered"><a href="{{route('indexAdmin')}}"><img src="{{asset('Admin/img/pro.png')}}" class="img-circle" width="80"></a></p>
+      <h3 class="centered">ProFix</h3>
       <br>
         
 
