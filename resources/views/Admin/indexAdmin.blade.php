@@ -471,18 +471,7 @@
               </div>
             </div>
             <!-- Third Activity -->
-            <div class="desc">
-              <div class="thumb">
-                <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-              </div>
-              <div class="details">
-                <p>
-                  <muted>3 Hours Ago</muted>
-                  <br/>
-                  <a href="#">Mohamed Mostafa</a> purchased a year subscription.<br/>
-                </p>
-              </div>
-            </div>
+           
             <!-- Fourth Activity -->
             <div class="desc">
               <div class="thumb">
@@ -497,7 +486,7 @@
               </div>
             </div>
             <!-- USERS ONLINE SECTION -->
-            <h4 class="centered mt">TEAM MEMBERS ONLINE</h4>
+            <h4 class="centered mt">TEAM MEMBERS </h4>
             <!-- First Member -->
             <div class="desc">
               <div class="thumb">
@@ -542,6 +531,18 @@
               <div class="details">
                 <p>
                   <a href="#">Asser Ibrahim</a><br/>
+                  <muted>Available</muted>
+                </p>
+              </div>
+            </div>
+
+            <div class="desc">
+              <div class="thumb">
+                <img class="img-circle" src="{{asset('Admin/img/ahmed.jpg')}}" width="35px" height="35px" align="">
+              </div>
+              <div class="details">
+                <p>
+                  <a href="#">Ahmed Alaa</a><br/>
                   <muted>Available</muted>
                 </p>
               </div>

@@ -145,8 +145,9 @@
                      
                       <th>Phone</th>
                       <th>E-mail</th>
-                      <th>delete</th>
                       <th>Update</th>
+                      <th>delete</th>
+                      
                     </tr>
                   </thead>
                   <tbody>
@@ -156,8 +157,9 @@
                       <td> {{$d->phone}}</td>
                       
                       <td class="numeric">{{$d->email}}</td>
-                      <td> <a href="{{route('deleteTable',['id' => $d->id])}}" class='btn btn-danger'>Delete</a> </td>
                       <td> <a href="" class='btn btn-primary'>Edit</a> </td>
+                      <td> <a href="{{route('deleteTable',['id' => $d->id])}}" class='btn btn-danger'>Delete</a> </td>
+                      
                       
                     </tr>
                   @endforeach

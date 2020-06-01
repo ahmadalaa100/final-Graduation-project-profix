@@ -39,18 +39,18 @@
                     <span>  Complete the form and Join Us ! </span>
                 </div>
                 <div class="name">
-                    <input type="text" name="fname" class="input-name" placeholder="Enter Your first name*">
+                    <input type="text" name="fname" class="input-name" placeholder="Enter Your first name*" required>
                 </div>
 
                 <div class="name">
-                    <input type="text" name="lname" class="input-name" placeholder="Enter Your last name*">
+                    <input type="text" name="lname" class="input-name" placeholder="Enter Your last name*" required>
                 </div>
 
                 <div class="phone">
-                    <input type="text" name="id" class="input-phone" placeholder="Enter Your National ID *">
+                    <input type="text" name="id" class="input-phone" placeholder="Enter Your National ID *" required>
                 </div>
 
-                <select name="spec"  class="choice">
+                <select name="spec"  class="choice" required>
                     <option selected disabled>  Choose Your  special  </option>
                     <option> Air Conditioning </option>
                     <option> Carpentary</option>
@@ -62,10 +62,10 @@
                 
     
             <div class="phone">
-                    <input type="text" name="phone" class="input-phone" placeholder="Enter Your Phone *">
+                    <input type="text" name="phone" class="input-phone" placeholder="Enter Your Phone *" required>
                 </div>
                 <div class="mail">
-                    <input type="email" name="mail" class="input-mail" placeholder="Enter Your Mail *">
+                    <input type="email" name="mail" class="input-mail" placeholder="Enter Your Mail *"required>
                 </div>
         
             <div class="button">
