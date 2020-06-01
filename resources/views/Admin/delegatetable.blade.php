@@ -157,7 +157,7 @@
                       <td> {{$d->phone}}</td>
                       
                       <td class="numeric">{{$d->email}}</td>
-                      <td> <a href="" class='btn btn-primary'>Edit</a> </td>
+                      <td> <a href="{{route('delegateEdit',['id' => $d->id])}}" class='btn btn-primary'>Edit</a> </td>
                       <td> <a href="{{route('deleteTable',['id' => $d->id])}}" class='btn btn-danger'>Delete</a> </td>
                       
                       

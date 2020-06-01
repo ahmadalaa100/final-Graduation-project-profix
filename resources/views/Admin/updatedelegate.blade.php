@@ -146,16 +146,16 @@
             <h1 class='text-center'>Update Delegate</h1>
             <br>
             <br>
-    <form  class='forml' >
-           
+    <form class='forml' action="{{route('delegateUpdate',['id' => $delegate->id])}}" method='POST'>
+           @csrf
             <div class="data">
            
                 
 
                     <div class="fname">
                         <label>  Name : </label>
-                        <input type="text" 
-                         name="fname" placeholder="ex: Ahmed" class="input-fname"  required style="margin-left:35px;"> 
+                        <input type="text" value="{{$delegate->name}}"
+                         name="name" placeholder="ex: Ahmed" class="input-fname"  required style="margin-left:35px;"> 
                     </div>
 <!--
                     <div class="lname">
@@ -186,12 +186,12 @@
 
                     <div class="number">
                         <label> Phone : </label>
-                        <input type="text"  name="number" class="input-number" placeholder="ex: 01234567890"required  style="margin-left:32px;">
+                        <input type="text"  value="{{$delegate->phone}}"  name="phone" class="input-number" placeholder="ex: 01234567890"required  style="margin-left:32px;">
                     </div>
 
                     <div class="email">
                         <label> E-mail : </label>
-                        <input type="email" name="email" class="input-email" placeholder="ex: info@example.com"required>
+                        <input type="email" value="{{$delegate->email}}" name="mail" class="input-email" placeholder="ex: info@example.com"required>
                     </div>
 <!--
                     <div class="address">
