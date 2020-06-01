@@ -65,15 +65,16 @@
                  <th class="th"> Payment </th>
                  
               </tr>
-
+            @foreach($orders as $o)
               <tr>
-                 <th> Ali </th>
-                 <th> info@email.com </th>
-                 <th> +20123456789 </th>
-                 <th> tanta </th>
-                 <th> Electrician </th>
+                 <th> {{$o->name}} </th>
+                 <th> {{$o->mail}} </th>
+                 <th> {{$o->phone}} </th>
+                 <th> {{$o->addreess}} </th>
+                 <th> {{$o->spec}} </th>
                  <th> Cash </th>
               </tr>
+            @endforeach
            </table>
 
         </div>

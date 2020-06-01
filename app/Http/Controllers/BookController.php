@@ -21,6 +21,14 @@ class BookController extends Controller
         {
             $request->tech = null;
         }
+
+        if($request->photo !=null)
+        {
+            $image = $request->photo;
+            $new_image = time() . $image->getClientOriginalName();
+            $image->move('uploads/',$new_image);
+            $order->image = 'uploads/' . $new_image;
+        }
         $order->name = $request->name;
         $order->mail = $request->mail;
         $order->phone = $request->phone;
@@ -31,14 +39,6 @@ class BookController extends Controller
         $order->user_id = $request->user_id;
         $order->tech_id = $request->tech;
         $order->jobTime = $request->time;
-
-        // handle image
-
-        $image = $request->photo;
-
-        $new_image = time() . $image->getClientOriginalName();
-        $image->move('uploads/',$new_image);
-        $order->image = 'uploads/' . $new_image;
 
         $order->save();
 
