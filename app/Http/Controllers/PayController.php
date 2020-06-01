@@ -3,17 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Orders;
 use Session;
 use Stripe;
 class PayController extends Controller
 {
-    public function index()
+    public function index($id)
     {
-        return view('pay');
+        $order = Orders::findOrFail($id);
+        return view('pay')->with('order',$order);
     }
-    public function charge(Request $request)
+    public function charge(Request $request,$id)
     {
+        $order = Orders::findOrFail($id);
         Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
         Stripe\Charge::create ([
                 "amount" => 100 * 100,
@@ -23,8 +25,9 @@ class PayController extends Controller
         ]);
   
         Session::flash('success', 'Payment successful!');
-          
-        return back();
+        $order->payed = 1;
+        $order->save();
+        return redirect()->route('customerUI');
     }
 
 }

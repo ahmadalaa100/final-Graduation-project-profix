@@ -13,7 +13,7 @@ class CustomeruiController extends Controller
     public function customer(){
 
         $orders = DB::table('orders')->join('users','users.id','=','orders.user_id')
-        ->select('users.name','orders.addreess','orders.spec','orders.jobDate','orders.jobTime','orders.payed')->get();
+        ->select('orders.id','users.name','orders.addreess','orders.spec','orders.jobDate','orders.jobTime','orders.payed')->get();
         
         return view("customer")->with('orders',$orders);
         

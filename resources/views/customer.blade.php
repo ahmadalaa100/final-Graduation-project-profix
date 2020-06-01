@@ -55,6 +55,12 @@
              
            </form>
 -->
+                    @if (Session::has('success'))
+                        <div class="alert alert-success text-center">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                            <p>{{ Session::get('success') }}</p>
+                        </div>
+                    @endif
           <table>
                
               <tr>
@@ -75,7 +81,7 @@
                  <th> {{$d->jobTime}} </th>
                  <th> {{$d->jobDate}} </th>
                  @if($d->payed == 0)
-                 <th><a href="#" class='btn btn-primary'>Pay</a></th>
+                 <th><a href="{{route('pay',['id'=>$d->id])}}" class='btn btn-primary'>Pay</a></th>
                  <th>No</th>
                  @else
                  <th>None</th>
