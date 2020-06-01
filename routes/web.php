@@ -95,6 +95,9 @@ Route::middleware(['auth','CheckRole'])->group(function () {
 Route::get('payment/{id}','PayController@index')->name('pay');
 Route::post('stripe/{id}', 'PayController@charge')->name('stripe.post');
 
+
+Route::post('/adduser','CustomersController@addUser')->name('adduser');
+
 /*
 Route::middleware(['auth'])->group(function () {
     Route::get('/indexAdmin','IndexAdminController@indexAdmin')->name('indexAdmin');

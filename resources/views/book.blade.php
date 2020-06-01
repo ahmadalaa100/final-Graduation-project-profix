@@ -29,7 +29,7 @@
 
         </header>
 
-        <form action="{{route('bookJob')}}" method="post">
+        <form action="{{route('bookJob')}}" method="post" enctype="multipart/form-data">
             {{csrf_field()}}
             <div class="data">
             <div class="book">
