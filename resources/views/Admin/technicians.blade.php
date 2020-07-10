@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Dashboard">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-  <title>ProFix || Admin </title>
+  <title>Admin | Technicians </title>
 
   <!-- Favicons -->
   <link href="{{asset('Admin/img/p.jpg')}}" rel="icon">
@@ -167,12 +167,12 @@
                       <td class="numeric">{{$t->phone}}</td>
                       <td class="numeric">{{$t->mail}}</td>
                       @if($t->active == 1)
-                      <td> <a href="{{route('techfreeze',['id' => $t->id])}}" class='btn btn-info'>Freeze</a> </td>
+                      <td> <a href="{{route('techfreeze',['id' => $t->id])}}" class='btn btn-info' style="width:100px;">Freeze</a> </td>
                       <td> <a href="{{route('techedit',['id' => $t->id])}}" class='btn btn-primary'>Edit</a> </td>
                       <td> <a href="{{route('techdelete',['id' => $t->id])}}" class='btn btn-danger'>Delete</a> </td>
                      
                       @else
-                      <td> <a href="{{route('techactive',['id' => $t->id])}}" class='btn btn-info'>Activate</a> </td>
+                      <td> <a href="{{route('techactive',['id' => $t->id])}}" class='btn btn-info'style="width:100px;">Activate</a> </td>
                       <td> <a href="{{route('techedit',['id' => $t->id])}}" class='btn btn-primary'>Edit</a> </td>
                       <td> <a href="{{route('techdelete',['id' => $t->id])}}" class='btn btn-danger'>Delete</a> </td>
                      

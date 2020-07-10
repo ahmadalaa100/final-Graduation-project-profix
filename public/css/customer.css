@@ -236,6 +236,7 @@ table{
     border-collapse: collapse;
     background-color: white;
     margin-left: 25%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 select{
     width: 80%;
@@ -253,6 +254,7 @@ th , tr{
     border:1px solid #ddd;
     text-align: center;
     font-size:16px;
+    
 }
 .th{
     background-color: #103f7e;
@@ -310,3 +312,27 @@ footer .social img{
     transform: rotate(360deg);
     transition: 2s;
 }
+.alert {
+    padding: 20px;
+    background-color: #75daad; /* sucsses */
+    color: white;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }

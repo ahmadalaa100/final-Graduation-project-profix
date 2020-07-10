@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="Dashboard">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-  <title>ProFix || Admin </title>
+  <title>Admin | Update Delegates </title>
 
   <!-- Favicons -->
   <link href="{{asset('Admin/img/p.jpg')}}" rel="icon">

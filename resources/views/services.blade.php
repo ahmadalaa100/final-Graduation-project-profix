@@ -20,10 +20,11 @@
           
          
            <nav>
-            <a href="{{route('index')}}"> Home </a>
+                    <a href="{{route('index')}}"> Home </a>
                     <a href="{{route('services')}}"> Services </a>
                     <a href="{{route('about')}}"> About Us </a>
                     <a href="{{route('contact')}}"> Contact </a>
+                    <a href="{{route('customerUI')}}"> My Orders </a>
            </nav>
 <!--
            <div class="sign">
