@@ -33,31 +33,11 @@
                 </div>
             </div>
         </header>
-        <!--
-        <div class="data">
-           <form action="" method="POST" target="_blank">
-             <input type="text" name="" placeholder=" * NAME">
-             <input type="text" name="" placeholder=" * E-mail">
-             <input type="text" name="" placeholder=" * Phone Number">
-             <input type="text" name="" placeholder=" * Address">
-             <select name="special"  class="choice">
-                <option selected disabled>  Choose a special  </option>
-                <option> Air Conditioning </option>
-                <option> Carpentary </option>
-                <option> Electrician </option>
-                <option> Painting </option>
-                <option> Plumbing </option>
-                <option> Glass & Aluminium </option>
-            </select>
-             <input type="date" name="">
-             <input type="time" name="">
-             <input type="submit"  id="but">
-             
-           </form>
--->
+       
                     @if (Session::has('success'))
-                        <div class="alert alert-success text-center">
-                            <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+                        <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                          <!--  <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>-->
                             <p>{{ Session::get('success') }}</p>
                         </div>
                     @endif
@@ -71,7 +51,7 @@
                  <th class="th"> Date </th>
 
                  <th class="th"> Pay </th>
-                 <th class="th"> Is Payed ? </th>
+                 <th class="th">Payed ? </th>
               </tr>
             @foreach($orders as $d)
               <tr>
@@ -81,10 +61,12 @@
                  <th> {{$d->jobTime}} </th>
                  <th> {{$d->jobDate}} </th>
                  @if($d->payed == 0)
-                 <th><a href="{{route('pay',['id'=>$d->id])}}" class='btn btn-primary'>Pay</a></th>
+                 <th><a href="{{route('pay',['id'=>$d->id])}}" class='btn btn-primary' 
+                     style="text-decoration:none; border:1px solid blue;
+                      padding:8px 15px;border-radius:5px;background-color:#0f4c81;color:white; font-family:Arial;">Pay</a></th>
                  <th>No</th>
                  @else
-                 <th>None</th>
+                 <th>Done</th>
                  <th>Yes</th>
                  @endif
                  

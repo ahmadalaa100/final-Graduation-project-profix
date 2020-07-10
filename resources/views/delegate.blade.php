@@ -33,27 +33,7 @@
                 </div>
             </div>
         </header>
-        <!--
-        <div class="data">
-           <form action="" method="POST" target="_blank">
-             <input type="text" name="" placeholder=" * NAME">
-             <input type="text" name="" placeholder=" * E-mail">
-             <input type="text" name="" placeholder=" * Phone Number">
-             <input type="text" name="" placeholder=" * Address">
-             <select name="special"  class="choice">
-                <option selected disabled>  Choose a special  </option>
-                <option> Air Conditioning </option>
-                <option> Carpentary </option>
-                <option> Electrician </option>
-                <option> Painting </option>
-                <option> Plumbing </option>
-                <option> Glass & Aluminium </option>
-            </select>
-             <input type="text" name="" placeholder="* Payment">
-             <input type="submit"  id="but">
-             
-           </form>
--->
+       
           <table>
                
               <tr>

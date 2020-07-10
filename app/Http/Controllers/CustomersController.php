@@ -23,5 +23,6 @@ class CustomersController extends Controller
         ]);
 
         return redirect()->route('indexAdmin');
+
     }
 }
