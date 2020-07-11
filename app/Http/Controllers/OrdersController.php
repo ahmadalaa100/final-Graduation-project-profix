@@ -21,7 +21,7 @@ class OrdersController extends Controller
         $orders = DB::table('orders')
         ->leftJoin('technicians','technicians.id','=','orders.tech_id')
         ->select('orders.id','orders.name','orders.mail','orders.phone','orders.addreess','orders.spec','orders.jobDate','orders.jobTime'
-        ,'technicians.firstName','technicians.lastName')
+        ,'technicians.firstName','technicians.lastName','orders.price')
         ->orderBy('orders.created_at', 'desc')->paginate(10);
 
         $tech = Technicians::all()->where('active',1);
@@ -93,6 +93,7 @@ class OrdersController extends Controller
         $orders->jobDate = $request->jobDate;
         $orders->jobTime = $request->jobTime;
         $orders->spec = $request->spec;
+        $orders->price = $request->price;
 
         $orders->save();
 

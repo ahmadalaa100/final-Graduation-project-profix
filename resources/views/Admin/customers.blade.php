@@ -156,6 +156,7 @@
                     <th>Specialization</th>
                     <th>Date</th>
                     <th>Time</th>
+                    <th>Price</th>
                     <th>Assign</th>
                     <th>Progress</th>
                    
@@ -171,9 +172,10 @@
                     <td>{{$i->phone}}</td>
                     <td>{{$i->addreess}}</td>
                     <td>{{$i->spec}}</td>
-                   
+                    
                     <td>{{$i->jobDate}}</td>
                     <td>{{$i->jobTime}}</td>
+                    <td>{{$i->price}}  $</td>
                     <td>
                     <form action="{{route('changeAssign',['id' => $i->id])}}" method='post'>
                     {{csrf_field()}}

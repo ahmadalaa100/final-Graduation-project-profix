@@ -92,8 +92,8 @@ Route::middleware(['auth','CheckRole'])->group(function () {
 });
 
 
-Route::get('payment/{id}','PayController@index')->name('pay');
-Route::post('stripe/{id}', 'PayController@charge')->name('stripe.post');
+Route::get('payment/{id}/{price}','PayController@index')->name('pay');
+Route::post('stripe/{id}/{price}', 'PayController@charge')->name('stripe.post');
 
 
 Route::post('/adduser','CustomersController@addUser')->name('adduser');

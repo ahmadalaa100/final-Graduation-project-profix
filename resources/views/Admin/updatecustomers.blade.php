@@ -169,8 +169,8 @@
                   <input type="text"  value="{{$o->addreess}}" name="addreess" class="input-address" placeholder="Address*">
               </div>
           <div class="special">
-              <select name="spec"   class="choice" required>
-              <option selected disabled >{{$o->spec}}</option>
+              <select name="spec" class="choice" required>
+                <option selected >{{$o->spec}}</option>
                 <option value="Air Conditioning "> Air Conditioning </option>
                 <option value="Carpentart"> Carpentart </option>
                 <option value="Electrician"> Electrician </option>
@@ -178,7 +178,12 @@
                 <option value="Plumbing "> Plumbing </option>
                 <option value="Glass & Aluminiums"> Glass & Aluminium </option>
             </select>
+
         </div>
+              <div class="date">
+                  <input type="number" value="{{$o->price}}" name="price" class="input-date">
+              </div>
+
               <div class="date">
                   <input type="date" value="{{$o->jobDate}}" name="jobDate" class="input-date">
               </div>

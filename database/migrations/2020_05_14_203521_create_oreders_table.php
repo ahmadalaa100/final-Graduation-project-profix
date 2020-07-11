@@ -21,7 +21,7 @@ class CreateOredersTable extends Migration
             $table->string('addreess');
             $table->string('spec');
             $table->string('pay');
-
+            $table->integer('price')->default(0);
             $table->unsignedBigInteger('tech_id')->nullable();
             $table->foreign('tech_id')->references('id')->on('technicians');
 

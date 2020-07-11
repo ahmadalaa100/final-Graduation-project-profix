@@ -60,15 +60,19 @@
                  <th> {{$d->spec}} </th>
                  <th> {{$d->jobTime}} </th>
                  <th> {{$d->jobDate}} </th>
-                 @if($d->payed == 0)
-                 <th><a href="{{route('pay',['id'=>$d->id])}}" class='btn btn-primary' 
-                     style="text-decoration:none; border:1px solid blue;
-                      padding:8px 15px;border-radius:5px;background-color:#0f4c81;color:white; font-family:Arial;">Pay</a></th>
-                 <th>No</th>
-                 @else
-                 <th>Done</th>
-                 <th>Yes</th>
-                 @endif
+                 @if($d->price !=0)
+                    @if($d->payed == 0)
+                    <th><a href="{{route('pay',['id'=>$d->id,'price'=>$d->price])}}" class='btn btn-primary' 
+                        style="text-decoration:none; border:1px solid blue;
+                        padding:8px 15px;border-radius:5px;background-color:#0f4c81;color:white; font-family:Arial;">Pay</a></th>
+                    <th>No</th>
+                    @else
+                    <th>Done</th>
+                    <th>Yes</th>
+                    @endif
+                @else
+                    <th>Wait for price</th>
+                @endif
                  
               </tr>
               @endforeach

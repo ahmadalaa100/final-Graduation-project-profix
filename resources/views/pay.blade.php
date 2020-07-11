@@ -52,7 +52,7 @@
                         </div>
                     @endif
   
-                    <form role="form" action="{{ route('stripe.post',['id'=>$order->id]) }}" method="post" class="require-validation"
+                    <form role="form" action="{{ route('stripe.post',['id'=>$order->id,'price'=>$order->price]) }}" method="post" class="require-validation"
                                                      data-cc-on-file="false"
                                                     data-stripe-publishable-key="{{ env('STRIPE_KEY') }}"
                                                     id="payment-form">
@@ -100,7 +100,7 @@
   
                         <div class="row">
                             <div class="col-xs-12">
-                                <button class="btn btn-primary btn-lg btn-block" type="submit">Pay Now ($100)</button>
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">Pay Now {{$order->price}} $</button>
                             </div>
                         </div>
                           
