@@ -13,12 +13,12 @@ class PayController extends Controller
         $order = Orders::findOrFail($id);
         return view('pay')->with('order',$order);
     }
-    public function charge(Request $request,$id)
+    public function charge(Request $request,$id,$price)
     {
         $order = Orders::findOrFail($id);
         Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
         Stripe\Charge::create ([
-                "amount" => 100 * 100,
+                "amount" => $price * 100,
                 "currency" => "usd",
                 "source" => $request->stripeToken,
                 "description" => "Test payment from Mohmaed Belal." 
